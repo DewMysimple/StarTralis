@@ -1,0 +1,52 @@
+{
+  "short": {
+    "alpha": 249724,
+    "visible": 4360,
+    "checksum": 25839960,
+    "width": 1440,
+    "height": 900
+  },
+  "twoSeconds": {
+    "alpha": 3966747,
+    "visible": 64567,
+    "checksum": 289820851,
+    "width": 1440,
+    "height": 900
+  },
+  "eightSeconds": {
+    "alpha": 11306986,
+    "visible": 231097,
+    "checksum": 1111827401,
+    "width": 1440,
+    "height": 900
+  },
+  "fade250": {
+    "alpha": 4759751,
+    "visible": 126731,
+    "checksum": 1117641765,
+    "width": 1440,
+    "height": 900
+  },
+  "fade600": {
+    "alpha": 433737,
+    "visible": 0,
+    "checksum": 1058774431,
+    "width": 1440,
+    "height": 900
+  },
+  "backgroundBefore": {
+    "alpha": 14784,
+    "visible": 391,
+    "checksum": 2558671,
+    "width": 1440,
+    "height": 900
+  },
+  "backgroundAfter": {
+    "alpha": 14784,
+    "visible": 391,
+    "checksum": 2557967,
+    "width": 1440,
+    "height": 900
+  },
+  "errors": []
+}

@@ -1,0 +1,89 @@
+:root {
+  font-family: Georgia, 'Palatino Linotype', 'Iowan Old Style', Palatino, serif;
+  color: #e9e9eb;
+  background: #05070d;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+body { overscroll-behavior: none; }
+
+.starfield-scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100svh;
+  overflow: hidden;
+  isolation: isolate;
+  background: radial-gradient(ellipse at 50% 67%, #0b111b 0%, #080d16 40%, #05070d 100%);
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  cursor: default;
+}
+
+.scene-canvas, .scene-vignette { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.scene-background { z-index: 0; }
+.scene-trails { z-index: 1; }
+.scene-vignette {
+  z-index: 2;
+  background: radial-gradient(ellipse at 50% 60%, transparent 38%, rgb(2 4 9 / 14%) 80%, rgb(2 4 9 / 35%) 120%);
+}
+
+.scene-copy {
+  position: absolute;
+  z-index: 3;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -.55em);
+  width: max-content;
+  max-width: calc(100% - 40px);
+  text-align: center;
+  pointer-events: none;
+  font-size: clamp(36px, 3.35vw, 54px);
+  text-shadow: 0 2px 18px rgb(5 7 13 / 75%);
+}
+.scene-copy h1 { margin: 0; font-size: inherit; font-weight: 400; line-height: 1.1; letter-spacing: -.035em; }
+.scene-copy p {
+  margin: clamp(15px, 1.7vh, 20px) 0 0;
+  font-size: clamp(12px, 1.15vw, 17px);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: .012em;
+  color: #9297a1;
+}
+
+.celestial-center {
+  position: absolute;
+  z-index: 3;
+  top: 67%;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(183 194 208 / 46%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.starfield-scene:focus-visible .celestial-center { border-color: rgb(215 224 236 / 70%); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+
+@media (max-width: 600px) {
+  .starfield-scene { background: radial-gradient(ellipse at 50% 65%, #0b111b 0%, #080d16 40%, #05070d 100%); }
+  .scene-copy { top: 48%; font-size: clamp(36px, 10vw, 46px); }
+  .scene-copy p { margin-top: 17px; max-width: 310px; font-size: 12px; letter-spacing: 0; text-wrap: balance; }
+  .celestial-center { top: 65%; width: 26px; height: 26px; }
+}
+
+@media (max-height: 480px) and (min-width: 601px) {
+  .scene-copy { font-size: 34px; top: 43%; }
+  .scene-copy p { margin-top: 12px; font-size: 12px; }
+}

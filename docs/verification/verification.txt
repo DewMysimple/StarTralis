@@ -1,0 +1,64 @@
+Astral Flow 验收记录
+日期：2026-10-30（Asia/Shanghai）
+
+构建：npm run build 成功，TypeScript 严格检查与 Vite 生产构建通过。
+产物：dist/index.html、CSS、JS、favicon.svg。
+主要 JS 约 232.4 kB，gzip 约 73.1 kB。
+
+浏览器：Playwright 1.64.1 / Chromium 156，Windows 本机运行。
+npm test：10 passed，37.7 秒。
+
+通过项目：
+1. 初始动态画布为空；0.5 / 2 / 8 秒轨迹逐步增加。
+2. 松开后 0.25 / 0.6 秒逐渐变暗，约 1.05 秒完全返回 idle。
+3. 静态背景、标题和中心定位圆环在消散后保留。
+4. 连续按住 46 秒仍存在丰富星轨；衰减过程中可再次按住继续。
+5. 鼠标移出、pointercancel、多次按压、Space / Enter、按键重复、
+   鼠标与键盘同时按下、失焦和隐藏页面释放。
+6. 1440×900、1920×1080、390×844、768×1024 的静态与 8 秒画面。
+7. 改变尺寸后重建画布与轨道，不拉伸旧轨迹。
+8. 手机触摸指针输入与 touchCancel；设备 DPR=3 时绘图 DPR 限制为 1.75。
+9. prefers-reduced-motion 下静止待机、主动按压与释放。
+10. 60 / 120 / 144 Hz 控制时间步进：8 秒后相对 60 Hz 的
+    最大角位移差为 0.00303 / 0.00465 rad，符合速度独立于刷新率的目标。
+11. 分析报告加载全部 1518 帧，跳转到第 240 帧、单帧前进、原视频加载正常。
+
+单独生产包检查：通过 Vite preview 加载生产输出，确认标题、Canvas 初始化、
+按住进入 pressing、松开进入 idle，页面无异常。
+
+真实时间检查：按住约 8 秒并录制 video，随后释放并等待 1.15 秒。
+最终 state=idle、动态画布 remainingAlpha=0，console / page errors=[]。
+监测样本与浏览器信息保存在 live-performance.json。
+此记录是本机无头浏览器观测，不代表所有设备的性能，也不等同于实物手机测试。
+
+画面证据：
+desktop-idle.png / desktop-hold-0.5s.png / desktop-hold-2s.png
+desktop-hold-8s.png / desktop-hold-46s.png
+desktop-release-0.25s.png / desktop-release-0.6s.png / desktop-released.png
+1920x1080-*.png / 390x844-*.png / 768x1024-*.png
+mobile-touch-dpr3.png / desktop-live-hold-8s.png
+interaction.webm 为真实时间交互演示。
+
+数值证据：
+exposure-measurements.json：轨迹积累、消散、静态背景对照。
+refresh-rate-measurements.json：多刷新率受控步进结果。
+live-performance.json：真实时间 RAF 间隔与完全释放结果。
+
+本地作品：http://127.0.0.1:5180/
+逐帧报告：http://127.0.0.1:5180/docs/reference-analysis.html
+
+实现文件：
+src/components/StarfieldScene.tsx
+src/engine/StarParticle.ts
+src/engine/StarTrailEngine.ts
+src/styles/global.css
+src/App.tsx / src/main.tsx
+React / Vite / TypeScript 入口、配置、package.json 与锁文件。
+tests/starfield.spec.ts / playwright.config.ts
+scripts/analyze_reference.py / scripts/capture-preview.mjs
+docs/reference-analysis.html 与逐帧数据、关键帧、视觉验收记录。
+
+记录：录制脚本最初将 URL 编码的空格误当文件路径，曾在
+E:\Software%20Development\ArtTest\StarTralis\docs\verification
+写入一张截图和演示录像。清理项目外目录的操作被自动审批策略阻止。
+脚本现已使用 fileURLToPath，正确产物已重新生成在本项目 docs/verification。

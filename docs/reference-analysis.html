@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Astral Flow · 原视频逐帧分析</title>
+  <style>
+    :root{color-scheme:dark;font:15px/1.8 system-ui,sans-serif;background:#0b0e14;color:#c4cbd6}*{box-sizing:border-box}body{margin:0}main{max-width:1120px;margin:auto;padding:56px 28px 80px}h1,h2,h3{color:#ecedf0;font-weight:500;line-height:1.4}h1{font-family:Georgia,serif;font-size:44px;margin:0 0 14px}h2{font-size:24px;margin:48px 0 20px}h3{font-size:17px}p{max-width:900px}a{color:#b8cde9}small,.muted{color:#8993a3}.eyebrow{font-size:11px;letter-spacing:.2em;color:#a2afc2}video{width:100%;background:#05070d;border:1px solid #262c37;border-radius:6px}button,input{font:inherit;color:inherit;background:#151b25;border:1px solid #364153;border-radius:4px}button{padding:7px 15px;cursor:pointer}button:hover,button:focus-visible{border-color:#a0b3ce}input[type=number]{width:100px;padding:6px 8px}.controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:16px 0}input[type=range]{width:100%;accent-color:#b3c7e0}output{font-variant-numeric:tabular-nums}#graph{display:block;width:100%;height:180px;background:#10151d;cursor:crosshair;border:1px solid #27303f}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}figure{margin:0;border:1px solid #252e3c;background:#10151d;border-radius:5px;overflow:hidden}figure img{display:block;width:100%}figcaption{padding:14px 18px;font-size:13px}figcaption strong{display:block;color:#e0e5ed;font-size:15px}table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}td,th{padding:10px 12px;text-align:left;border-bottom:1px solid #232b36}th{color:#e2e6ed;font-weight:500}tr.active{background:#1b2b3f}tr[data-frame]{cursor:pointer}tr[data-frame]:hover{background:#172131}.table-wrap{overflow-x:auto}.note{border-left:2px solid #677c9a;padding:4px 20px;margin:24px 0;color:#b6c4d9}.facts{display:flex;gap:24px;flex-wrap:wrap;margin:24px 0}.facts span{display:block;font-size:11px;color:#8c99ab}.facts strong{font-size:20px;font-weight:400;color:#e1e8f1}.foot{border-top:1px solid #29313c;margin-top:46px;padding-top:20px;font-size:12px}ul{padding-left:22px}code{color:#b9cde9}#current-observation{min-height:60px}.contacts{margin-top:20px}.contacts img{width:100%;display:block;margin:16px 0}@media(max-width:640px){main{padding:30px 18px}.grid{grid-template-columns:1fr}h1{font-size:36px}h2{font-size:22px}.controls{gap:7px}td,th{padding:8px}}
+  </style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">REFERENCE STUDY / 2026.10.30</p>
+  <h1>Astral Flow</h1>
+  <p>原视频逐帧分析与实现依据。已按解码顺序处理全部 <strong>1,518 帧</strong>，计算画面变化数据；对逐秒总览和关键帧进行了视觉复核。下方可逐帧查看原片、对应数据及阶段说明。</p>
+  <div class="facts"><div><span>视频尺寸</span><strong>2956 × 1440</strong></div><div><span>帧率</span><strong>30 FPS</strong></div><div><span>画面时长</span><strong>50.600 s</strong></div><div><span>帧号（从 0 开始）</span><strong>F0000–F1517</strong></div></div>
+  <p class="note">视频包含标题轮换、增长与减弱的多个阶段。网页按 prompt_01.txt 的交互要求实现：固定 Astral Flow 标题、固定偏下圆心，按住积累，松开后约 1.05 秒消散。原片用来确定光感、弧线和构图，不作为网页自动播放时间轴。</p>
+
+  <h2>逐帧查看</h2>
+  <video id="video" controls preload="metadata" playsinline></video>
+  <div class="controls"><button id="previous" type="button">← 前一帧</button><button id="next" type="button">后一帧 →</button><label>帧号 <input id="frame-input" type="number" min="0" max="1517" value="0"></label><output id="frame-label">F0000 · 0.000 s</output></div>
+  <input id="scrubber" type="range" min="0" max="1517" value="0" aria-label="视频帧">
+  <p id="current-observation"></p>
+  <p class="muted">方向键可逐帧移动；拖动时间线或点击下方曲线、关键帧和数据行可定位。播放时以浏览器呈现的帧更新；单帧定位采用帧中点，避免压在两帧边界。</p>
+
+  <h2>全部 1,518 帧的画面变化</h2>
+  <canvas id="graph" aria-label="每帧相对于初始画面的亮度增加曲线"></canvas>
+  <p class="muted">纵轴为相对首帧的正亮度差，横轴为 0–50.6 秒。约 7.4 秒后第一轮亮度下降，11 秒附近进入低谷后重新增长；结尾 48.2 秒后大部分光迹已经消失。</p>
+  <div class="table-wrap"><table><thead><tr><th>帧</th><th>时间 / s</th><th>平均亮度</th><th>亮度增加</th><th>变化面积 / %</th><th>帧间变化</th></tr></thead><tbody id="metrics"></tbody></table></div>
+  <p class="muted">表格显示当前帧前后各 5 帧。完整数值保存在 <a href="reference/frames.json">frames.json</a>。</p>
+
+  <h2>关键帧与画面判断</h2>
+  <div class="grid" id="keyframes"></div>
+
+  <h2>运动与光感</h2>
+  <ul>
+    <li>真实圆周运动：同一颗星的轨迹始终与同一个圆心相切，屏幕边缘也遵循相同曲率。外圈半径更大，因此同样角速度会产生更长的可见弧线。</li>
+    <li>星头比尾部明亮，亮星只占少数。银白色主导，少量冰蓝色；尾部细、低亮，随时间减弱。光晕只围绕少量星头出现。</li>
+    <li>半径、起始角、亮度和弧长不规则。中心区域留白，外圈密度更高。曲线有清楚的起止点，长期按压也应保留短弧与断开区域。</li>
+    <li>原片标题出现 Orbit Trace、Celestial Drift、Stellar Echo、Night Orbit、Light Years、Astral Flow、Cosmic Trace。网页根据文字需求固定为 Astral Flow。</li>
+    <li>尾部消散不应带走静态星点、标题和中心圆环。再次按压时从星体保留的位置继续运动，不连接不连续的位置。</li>
+  </ul>
+
+  <h2>对应实现参数</h2>
+  <div class="table-wrap"><table><thead><tr><th>项目</th><th>实现</th></tr></thead><tbody>
+    <tr><td>构图</td><td>桌面圆心 (50%, 67%)；手机 (50%, 65%)；标题中心约 49% / 48%。</td></tr>
+    <tr><td>粒子</td><td>桌面 480 / 低性能 360；手机 280 / 低性能 240；减少动态偏好 180。</td></tr>
+    <tr><td>轨道</td><td>屏幕位置随机采样转换为极坐标；最小半径 44 CSS px；半径覆盖四角。</td></tr>
+    <tr><td>角速度</td><td>0.12–0.37 rad/s，统一主方向、独立随机速度；使用秒级 deltaTime 积分。</td></tr>
+    <tr><td>启动</td><td>约 0.34 s 平滑加速；0–2.7 s 分批激活。</td></tr>
+    <tr><td>历史</td><td>每颗星 384 个固定槽，约 30 Hz 采样；寿命 3.2–10.2 s。</td></tr>
+    <tr><td>光迹</td><td>离屏透明画布持续叠加真实运动弧段，destination-out 指数擦除；每 0.45 s 从有限历史校正，清除低透明度量化残留。</td></tr>
+    <tr><td>星头</td><td>显示层单独合成小光点；辉光纹理只创建一次，少量亮星采用 lighter 混合。</td></tr>
+    <tr><td>释放</td><td>立即停止位移与新段生成；指数擦除与平滑透明度共同消散；1.05 s 后清理完全透明的缓冲区并停止 RAF。</td></tr>
+    <tr><td>输入</td><td>Pointer Events、pointer capture、cancel、lost capture、blur、visibilitychange；Space / Enter，多输入源合并。</td></tr>
+    <tr><td>性能</td><td>DPR 上限桌面 2、手机 1.75、低性能 1.25，并限制像素预算；静态背景不逐帧重绘；无逐帧 React State 更新。</td></tr>
+  </tbody></table></div>
+
+  <h2>逐秒画面总览</h2>
+  <div class="contacts"><img src="reference/contact-1.jpg" alt="0 至 15 秒逐秒画面" loading="lazy"><img src="reference/contact-2.jpg" alt="16 至 31 秒逐秒画面" loading="lazy"><img src="reference/contact-3.jpg" alt="32 至 47 秒逐秒画面" loading="lazy"><img src="reference/contact-4.jpg" alt="48 秒至最后一帧" loading="lazy"></div>
+  <p class="foot">量测方式：完整解码原片，每帧缩至 739 × 360；以灰度近似亮度。固定遮罩排除主要标题区域、中心圆环附近与底部水印；变化面积定义为相对首帧增加超过 8/255 的像素占比。轻微镜头位移、压缩与遮罩之外的文字会影响数值，因此曲线用来定位视觉变化，不能据此推断原始按压事件或反推出精确粒子数量、角速度。所有参数是依据视觉目标调试得到的实现选择。</p>
+  <p>实现验收：10 项 Chromium 浏览器测试通过；覆盖 1440 × 900、1920 × 1080、390 × 844、768 × 1024，短按、8 秒与 46 秒长按、释放、再按、取消、移出画面、键盘、后台状态、尺寸变化、高 DPR 与减少动态偏好。60 / 120 / 144 Hz 为受控时间步进验证，触屏为浏览器设备模拟；另行录制了真实时间运行的 <a href="verification/interaction.webm">交互演示</a>。完整记录见 <a href="verification/verification.txt">验收记录</a>。</p>
+  <p>API 依据：<a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation">MDN Canvas 合成模式</a>、<a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setPointerCapture">MDN Pointer Capture</a>、<a href="https://vite.dev/guide/">Vite 官方指南</a>。</p>
+  <p><a href="../index.html">打开交互作品</a></p>
+</main>
+<script src="reference/frames.js"></script>
+<script>
+  const data = window.ASTRAL_REFERENCE;
+  const video = document.querySelector('#video');
+  const scrubber = document.querySelector('#scrubber');
+  const input = document.querySelector('#frame-input');
+  const label = document.querySelector('#frame-label');
+  const graph = document.querySelector('#graph');
+  const observations = [
+    [0, 44, '初始静态星空。少量星点、Orbit Trace 标题和细圆环；尚未形成长轨迹。'],
+    [45, 89, '启动阶段：许多短小弧段逐渐出现。约 2 秒可见运动方向与亮星头，仍有大量暗部。'],
+    [90, 222, '第一轮积累：弧线逐渐延长，外圈到达屏幕边缘。7 秒附近已非常丰富。'],
+    [223, 329, '第一轮减弱：既有星轨逐渐缩短、变淡。8 秒仍很密集，10–11 秒明显稀疏。'],
+    [330, 539, '重新增长：12 秒标题已切换 Stellar Echo，短弧仍在；随后再次形成密集长弧。'],
+    [540, 1199, '持续展示与多轮亮度起伏。标题依次切换 Night Orbit、Light Years、Astral Flow；星轨始终具有长短层次。'],
+    [1200, 1369, 'Cosmic Trace 阶段：丰富星轨、细小亮头，外圈更密集，中心保留暗部。'],
+    [1370, 1446, '结尾减弱：46 秒仍有大量长弧，47–48 秒逐渐缩短和变暗；48.2 秒变化面积已降至约 0.17%。'],
+    [1447, 1517, '回归静态：约 48.5 秒至结尾，运动光迹基本消失，背景、标题和圆环保留。'],
+  ];
+  const keyNotes = new Map([
+    [0, '起始画面。原片标题为 Orbit Trace，网页使用指定的 Astral Flow。'],
+    [15, '0.5 秒：原片仍接近静态。网页在用户按住约 0.5 秒时就应出现短轨迹。'],
+    [60, '2 秒：大量短弧。亮头与暗尾开始分离，不能一按下就出现完整圆环。'],
+    [240, '8 秒：主要视觉目标之一。长短不一的细圆弧，外圈延伸出画面，中心安静。'],
+    [360, '12 秒：Stellar Echo 标题，星轨仍在；此时亮度低于 8 秒，处于重新积累过程。'],
+    [1380, '46 秒：另一个主要视觉目标。亮星与淡线并存，暗部清楚，不能过曝成白色圆盘。'],
+    [1440, '48 秒：大量长轨已减弱成短弧与微弱光点。'],
+    [1455, '48.5 秒：光迹几乎完全消失。'],
+    [1470, '49 秒：基本恢复静态；背景星点、标题与圆环继续存在。'],
+  ]);
+  let currentFrame = 0;
+  const phase = frame => observations.find(([start,end]) => frame >= start && frame <= end)[2];
+  video.src = '../source/' + encodeURIComponent(data.source);
+  video.poster = 'reference/frame-0000.jpg';
+  function drawGraph() {
+    const bounds = graph.getBoundingClientRect();
+    const dpr = Math.min(devicePixelRatio || 1, 2);
+    graph.width = Math.round(bounds.width*dpr); graph.height = Math.round(bounds.height*dpr);
+    const ctx = graph.getContext('2d'); ctx.scale(dpr,dpr);
+    const w=bounds.width,h=bounds.height,pad=16,max=15;
+    ctx.font='11px system-ui'; ctx.fillStyle='#748397'; ctx.strokeStyle='#273344';
+    for(let i=0;i<=3;i++){const y=pad+(h-pad*2)*(i/3);ctx.beginPath();ctx.moveTo(pad,y);ctx.lineTo(w-pad,y);ctx.stroke();ctx.fillText(String(max-i*5),pad+4,y+12);}
+    ctx.strokeStyle='#aec7e4';ctx.lineWidth=1.3;ctx.beginPath();
+    data.frames.forEach((entry,i)=>{const x=pad+i/(data.frameCount-1)*(w-pad*2),y=h-pad-entry.trailLumaAboveBaseline/max*(h-pad*2);i?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.stroke();
+    const cursorX=pad+currentFrame/(data.frameCount-1)*(w-pad*2);ctx.strokeStyle='#fff';ctx.lineWidth=.7;ctx.beginPath();ctx.moveTo(cursorX,pad);ctx.lineTo(cursorX,h-pad);ctx.stroke();
+  }
+  function update(frame, seek=false) {
+    currentFrame=Math.max(0,Math.min(data.frameCount-1,Math.round(frame)));
+    scrubber.value=input.value=currentFrame;
+    label.textContent=`F${String(currentFrame).padStart(4,'0')} · ${(currentFrame/data.fps).toFixed(3)} s`;
+    document.querySelector('#current-observation').textContent=phase(currentFrame);
+    document.querySelector('#metrics').innerHTML=data.frames.slice(Math.max(0,currentFrame-5),currentFrame+6).map(f=>`<tr data-frame="${f.frame}" class="${f.frame===currentFrame?'active':''}"><td>F${String(f.frame).padStart(4,'0')}</td><td>${f.time.toFixed(3)}</td><td>${f.meanLuma.toFixed(3)}</td><td>${f.trailLumaAboveBaseline.toFixed(3)}</td><td>${f.changedAreaPercent.toFixed(3)}</td><td>${f.frameDifference.toFixed(3)}</td></tr>`).join('');
+    drawGraph();
+    if(seek){video.pause();video.currentTime=(currentFrame+.5)/data.fps;}
+  }
+  document.querySelector('#previous').onclick=()=>update(currentFrame-1,true);
+  document.querySelector('#next').onclick=()=>update(currentFrame+1,true);
+  scrubber.oninput=()=>update(Number(scrubber.value),true);
+  input.onchange=()=>update(Number(input.value),true);
+  document.querySelector('#metrics').onclick=event=>{const row=event.target.closest('[data-frame]');if(row)update(Number(row.dataset.frame),true);};
+  graph.onclick=event=>{const box=graph.getBoundingClientRect();update((event.clientX-box.left-16)/(box.width-32)*(data.frameCount-1),true);};
+  document.addEventListener('keydown',event=>{if(event.target.matches('input')||!['ArrowLeft','ArrowRight'].includes(event.code))return;event.preventDefault();update(currentFrame+(event.code==='ArrowRight'?1:-1),true);});
+  window.addEventListener('resize',drawGraph);
+  video.addEventListener('timeupdate',()=>{if(!video.paused)update(Math.floor(video.currentTime*data.fps));});
+  if(video.requestVideoFrameCallback){const onVideoFrame=(time,metadata)=>{if(!video.paused)update(Math.round(metadata.mediaTime*data.fps));video.requestVideoFrameCallback(onVideoFrame);};video.requestVideoFrameCallback(onVideoFrame);}
+  document.querySelector('#keyframes').innerHTML=data.keyFrames.filter(key=>keyNotes.has(key.frame)).map(key=>`<figure data-key="${key.frame}" tabindex="0" role="button" aria-label="定位到 ${key.time} 秒"><img src="${key.image}" alt="原片 ${key.time} 秒，F${key.frame}" loading="lazy"><figcaption><strong>${key.time.toFixed(1)} s · F${String(key.frame).padStart(4,'0')}</strong>${keyNotes.get(key.frame)}</figcaption></figure>`).join('');
+  document.querySelectorAll('[data-key]').forEach(item=>{const activate=()=>{update(Number(item.dataset.key),true);video.scrollIntoView({behavior:'smooth',block:'center'});};item.onclick=activate;item.onkeydown=event=>{if(['Enter','Space'].includes(event.code)){event.preventDefault();activate();}};});
+  update(0);
+</script>
+</body>
+</html>

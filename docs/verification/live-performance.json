@@ -1,0 +1,13 @@
+{
+  "measurement": "Real wall-clock hold on local headless Chromium; monitor RAF intervals, not simulated test time.",
+  "framesObserved": 1408,
+  "meanIntervalMs": 5.6069602272728085,
+  "p95IntervalMs": 5.699999999999818,
+  "maxIntervalMs": 38.89999999999998,
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+  "released": {
+    "state": "idle",
+    "remainingAlpha": 0
+  },
+  "errors": []
+}
