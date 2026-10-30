@@ -1,0 +1,24 @@
+{
+  "pages": 11,
+  "errors": [],
+  "warnings": [],
+  "read_budget": {
+    "unit": "characters (not model tokens)",
+    "limits": {
+      "startup_chars": 16000,
+      "page_chars": 6000,
+      "todo_items": 20
+    },
+    "startup_pages": {
+      "AGENTS.md": 834,
+      "wiki_memory/AGENTS.md": 5826,
+      "wiki_memory/README.md": 1034,
+      "wiki_memory/当前状态/项目概览.md": 2240,
+      "wiki_memory/当前状态/当前约束.md": 1754,
+      "wiki_memory/当前状态/当前待办.md": 1385
+    },
+    "startup_chars": 13073,
+    "todo_items": 3,
+    "warnings": []
+  }
+}
