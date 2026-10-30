@@ -1,5 +1,15 @@
 export const TAU = Math.PI * 2;
 const HISTORY_CAPACITY = 384;
+const colorTables = new Map<string, readonly string[]>();
+
+function colorTable(color: string) {
+  let table = colorTables.get(color);
+  if (!table) {
+    table = Array.from({ length: 1025 }, (_, alpha) => `rgba(${color},${alpha / 1024})`);
+    colorTables.set(color, table);
+  }
+  return table;
+}
 
 export function randomGenerator(seed: number) {
   return () => {
@@ -25,6 +35,8 @@ export class StarParticle {
   readonly brightness: number;
   readonly size: number;
   readonly color: string;
+  readonly alphaColors: readonly string[];
+  readonly headColor: string;
   readonly activationDelay: number;
   readonly phase: number;
   readonly glowFactor: number;
@@ -34,6 +46,10 @@ export class StarParticle {
   active = false;
   activatedAt = 0;
   headAlpha = 0;
+  exposure = 0;
+  resumeExposure = 0;
+  resumeHeadAlpha = 0;
+  quality = 1;
   historyCount = 0;
   historyCursor = -1;
   readonly times = new Float64Array(HISTORY_CAPACITY);
@@ -54,11 +70,13 @@ export class StarParticle {
     this.angle = Math.atan2(y, x);
     const category = random();
     const special = category > .965;
-    const bright = category > .81;
+    const bright = category > .85;
     this.angularVelocity = .12 + random() ** 1.4 * .25;
-    this.brightness = special ? .9 : bright ? .6 + random() * .2 : .18 + random() ** .9 * .45;
+    this.brightness = special ? .9 : bright ? .6 + random() * .2 : .12 + random() ** 1.5 * .35;
     this.size = special ? 1.1 + random() * .1 : bright ? .88 + random() * .27 : .65 + random() * .32;
     this.color = random() > .91 ? '180,205,241' : random() > .8 ? '207,217,232' : '225,230,236';
+    this.alphaColors = colorTable(this.color);
+    this.headColor = `rgb(${this.color})`;
     this.activationDelay = random() ** 1.6 * 2.7;
     this.phase = random() * TAU;
     this.glowFactor = special ? .8 : bright ? .2 : 0;
@@ -66,7 +84,7 @@ export class StarParticle {
   }
 
   record(time: number, exposure: number, force = false) {
-    if (!force && this.historyCount && time - this.times[this.historyCursor] < 1 / 30) return;
+    if (!force && this.historyCount && time - this.times[this.historyCursor] < 1 / 30 - 1e-6) return;
     this.historyCursor = (this.historyCursor + 1) % HISTORY_CAPACITY;
     this.times[this.historyCursor] = time;
     this.angles[this.historyCursor] = this.angle;
@@ -84,11 +102,20 @@ export class StarParticle {
     }
   }
 
+  prune(time: number) {
+    while (this.historyCount > 1 && this.times[this.indexBehind(this.historyCount - 1)] < time - this.lifetime) {
+      this.historyCount--;
+    }
+  }
+
   resetHistory() {
     this.historyCount = 0;
     this.historyCursor = -1;
     this.active = false;
     this.activatedAt = 0;
     this.headAlpha = 0;
+    this.exposure = 0;
+    this.resumeExposure = 0;
+    this.resumeHeadAlpha = 0;
   }
 }

@@ -1,0 +1,38 @@
+[
+  {
+    "repetition": 0,
+    "before": 2213692,
+    "after": 2229947,
+    "changePercent": 0.7342936596419047
+  },
+  {
+    "repetition": 1,
+    "before": 2165109,
+    "after": 2122817,
+    "changePercent": -1.9533427647291712
+  },
+  {
+    "repetition": 2,
+    "before": 2050100,
+    "after": 2017309,
+    "changePercent": -1.5994829520511233
+  },
+  {
+    "repetition": 3,
+    "before": 1950274,
+    "after": 1909445,
+    "changePercent": -2.0935007081056334
+  },
+  {
+    "repetition": 4,
+    "before": 1874187,
+    "after": 1830245,
+    "changePercent": -2.344589947534581
+  },
+  {
+    "repetition": 5,
+    "before": 1789331,
+    "after": 1763035,
+    "changePercent": -1.4695995318920851
+  }
+]

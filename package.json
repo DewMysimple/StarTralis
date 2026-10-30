@@ -9,7 +9,11 @@
     "preview": "vite preview --host 127.0.0.1",
     "test": "playwright test",
     "analyze:reference": "python scripts/analyze_reference.py",
-    "capture:preview": "node scripts/capture-preview.mjs"
+    "capture:preview": "node scripts/capture-preview.mjs",
+    "analyze:flicker": "python scripts/analyze_flicker.py",
+    "measure:stability": "node scripts/measure-stability.mjs",
+    "benchmark:stability": "node scripts/benchmark-stability.mjs",
+    "report:stability": "python scripts/report_stability.py"
   },
   "dependencies": {
     "react": "^19.2.0",

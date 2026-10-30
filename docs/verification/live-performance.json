@@ -1,13 +1,21 @@
 {
-  "measurement": "Real wall-clock hold on local headless Chromium; monitor RAF intervals, not simulated test time.",
-  "framesObserved": 1408,
-  "meanIntervalMs": 5.6069602272728085,
+  "measurement": "Actual wall-clock hold with PNG compositor capture; raw-Canvas probing disabled. Encoding runs afterward. Use iteration-02/live-performance.json for the independent benchmark.",
+  "rawCanvasWorstDropPercent": null,
+  "rawCanvasJumpsOver5Percent": null,
+  "canvasFrames": [],
+  "framesObserved": 1413,
+  "meanIntervalMs": 5.587048832271841,
   "p95IntervalMs": 5.699999999999818,
-  "maxIntervalMs": 38.89999999999998,
+  "maxIntervalMs": 16.699999999999818,
   "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
   "released": {
     "state": "idle",
     "remainingAlpha": 0
+  },
+  "recording": {
+    "method": "Actual CDP compositor PNG frames, original timestamps, post-capture VP9 lossless RGB (gbrp), 25 FPS presentation. Not a performance benchmark.",
+    "compositorFrames": 192,
+    "capturedDuration": 9.228714942932129
   },
   "errors": []
 }

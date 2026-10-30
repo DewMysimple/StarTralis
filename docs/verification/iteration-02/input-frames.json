@@ -1,0 +1,2724 @@
+{
+  "video": "source/diagnostics/PixPin_2026-10-30_22-46-44.mp4",
+  "fps": 24.0,
+  "width": 2550,
+  "height": 1314,
+  "frameCount": 256,
+  "duration": 10.666666666666666,
+  "measurement": "850x438 area-resampled positive luma difference from frame 0; title, ring and recording cursor masked. All frames decoded. Frame index is zero based.",
+  "drops": [
+    {
+      "frame": 73,
+      "time": 3.041667,
+      "energy": 640434.0,
+      "changePercent": -20.38562,
+      "meanAbsoluteDifference": 0.829409,
+      "pixelsAbove8": 19396,
+      "pixelsAbove20": 12173,
+      "pixelsAbove40": 4048
+    },
+    {
+      "frame": 84,
+      "time": 3.5,
+      "energy": 825111.0,
+      "changePercent": -18.98795,
+      "meanAbsoluteDifference": 0.943021,
+      "pixelsAbove8": 25290,
+      "pixelsAbove20": 15875,
+      "pixelsAbove40": 5358
+    },
+    {
+      "frame": 95,
+      "time": 3.958333,
+      "energy": 991980.0,
+      "changePercent": -17.33714,
+      "meanAbsoluteDifference": 0.940721,
+      "pixelsAbove8": 30829,
+      "pixelsAbove20": 19011,
+      "pixelsAbove40": 6516
+    },
+    {
+      "frame": 105,
+      "time": 4.375,
+      "energy": 1141729.0,
+      "changePercent": -16.49676,
+      "meanAbsoluteDifference": 1.041607,
+      "pixelsAbove8": 35798,
+      "pixelsAbove20": 21997,
+      "pixelsAbove40": 7534
+    },
+    {
+      "frame": 116,
+      "time": 4.833333,
+      "energy": 1283414.0,
+      "changePercent": -14.16956,
+      "meanAbsoluteDifference": 1.098731,
+      "pixelsAbove8": 40692,
+      "pixelsAbove20": 24578,
+      "pixelsAbove40": 8440
+    },
+    {
+      "frame": 127,
+      "time": 5.291667,
+      "energy": 1392083.0,
+      "changePercent": -13.39207,
+      "meanAbsoluteDifference": 1.081091,
+      "pixelsAbove8": 44876,
+      "pixelsAbove20": 26445,
+      "pixelsAbove40": 8902
+    },
+    {
+      "frame": 138,
+      "time": 5.75,
+      "energy": 1474418.0,
+      "changePercent": -14.09528,
+      "meanAbsoluteDifference": 1.094446,
+      "pixelsAbove8": 48636,
+      "pixelsAbove20": 28071,
+      "pixelsAbove40": 8977
+    },
+    {
+      "frame": 149,
+      "time": 6.208333,
+      "energy": 1564697.0,
+      "changePercent": -13.58602,
+      "meanAbsoluteDifference": 1.134786,
+      "pixelsAbove8": 52232,
+      "pixelsAbove20": 29500,
+      "pixelsAbove40": 9259
+    },
+    {
+      "frame": 160,
+      "time": 6.666667,
+      "energy": 1657256.0,
+      "changePercent": -11.55542,
+      "meanAbsoluteDifference": 1.162663,
+      "pixelsAbove8": 55786,
+      "pixelsAbove20": 30802,
+      "pixelsAbove40": 9469
+    },
+    {
+      "frame": 170,
+      "time": 7.083333,
+      "energy": 1701672.0,
+      "changePercent": -13.34734,
+      "meanAbsoluteDifference": 1.192173,
+      "pixelsAbove8": 58266,
+      "pixelsAbove20": 31388,
+      "pixelsAbove40": 9381
+    },
+    {
+      "frame": 181,
+      "time": 7.541667,
+      "energy": 1764056.0,
+      "changePercent": -12.53011,
+      "meanAbsoluteDifference": 1.13391,
+      "pixelsAbove8": 60842,
+      "pixelsAbove20": 32251,
+      "pixelsAbove40": 9482
+    },
+    {
+      "frame": 192,
+      "time": 8.0,
+      "energy": 1806892.0,
+      "changePercent": -13.32496,
+      "meanAbsoluteDifference": 1.223723,
+      "pixelsAbove8": 62628,
+      "pixelsAbove20": 32705,
+      "pixelsAbove40": 9538
+    },
+    {
+      "frame": 203,
+      "time": 8.458333,
+      "energy": 1843721.0,
+      "changePercent": -13.84042,
+      "meanAbsoluteDifference": 1.24024,
+      "pixelsAbove8": 64080,
+      "pixelsAbove20": 32853,
+      "pixelsAbove40": 9621
+    },
+    {
+      "frame": 214,
+      "time": 8.916667,
+      "energy": 1896275.0,
+      "changePercent": -13.02516,
+      "meanAbsoluteDifference": 1.190549,
+      "pixelsAbove8": 65822,
+      "pixelsAbove20": 33498,
+      "pixelsAbove40": 9773
+    },
+    {
+      "frame": 224,
+      "time": 9.333333,
+      "energy": 1922835.0,
+      "changePercent": -12.68319,
+      "meanAbsoluteDifference": 1.344301,
+      "pixelsAbove8": 66939,
+      "pixelsAbove20": 33651,
+      "pixelsAbove40": 9920
+    }
+  ],
+  "medianDropInterval": 0.458333,
+  "frames": [
+    {
+      "frame": 0,
+      "time": 0.0,
+      "energy": 0.0,
+      "changePercent": 0,
+      "meanAbsoluteDifference": 0.0,
+      "pixelsAbove8": 0,
+      "pixelsAbove20": 0,
+      "pixelsAbove40": 0
+    },
+    {
+      "frame": 1,
+      "time": 0.041667,
+      "energy": 4618.0,
+      "changePercent": 0,
+      "meanAbsoluteDifference": 0.024044,
+      "pixelsAbove8": 22,
+      "pixelsAbove20": 22,
+      "pixelsAbove40": 21
+    },
+    {
+      "frame": 2,
+      "time": 0.083333,
+      "energy": 6001.0,
+      "changePercent": 29.94803,
+      "meanAbsoluteDifference": 0.024245,
+      "pixelsAbove8": 25,
+      "pixelsAbove20": 21,
+      "pixelsAbove40": 21
+    },
+    {
+      "frame": 3,
+      "time": 0.125,
+      "energy": 9413.0,
+      "changePercent": 56.85719,
+      "meanAbsoluteDifference": 0.030475,
+      "pixelsAbove8": 24,
+      "pixelsAbove20": 21,
+      "pixelsAbove40": 21
+    },
+    {
+      "frame": 4,
+      "time": 0.166667,
+      "energy": 9968.0,
+      "changePercent": 5.8961,
+      "meanAbsoluteDifference": 0.012567,
+      "pixelsAbove8": 21,
+      "pixelsAbove20": 20,
+      "pixelsAbove40": 20
+    },
+    {
+      "frame": 5,
+      "time": 0.208333,
+      "energy": 10502.0,
+      "changePercent": 5.35714,
+      "meanAbsoluteDifference": 0.018567,
+      "pixelsAbove8": 23,
+      "pixelsAbove20": 22,
+      "pixelsAbove40": 21
+    },
+    {
+      "frame": 6,
+      "time": 0.25,
+      "energy": 10575.0,
+      "changePercent": 0.69511,
+      "meanAbsoluteDifference": 0.020516,
+      "pixelsAbove8": 24,
+      "pixelsAbove20": 24,
+      "pixelsAbove40": 21
+    },
+    {
+      "frame": 7,
+      "time": 0.291667,
+      "energy": 10892.0,
+      "changePercent": 2.99764,
+      "meanAbsoluteDifference": 0.020858,
+      "pixelsAbove8": 22,
+      "pixelsAbove20": 22,
+      "pixelsAbove40": 21
+    },
+    {
+      "frame": 8,
+      "time": 0.333333,
+      "energy": 11004.0,
+      "changePercent": 1.02828,
+      "meanAbsoluteDifference": 0.020397,
+      "pixelsAbove8": 24,
+      "pixelsAbove20": 23,
+      "pixelsAbove40": 21
+    },
+    {
+      "frame": 9,
+      "time": 0.375,
+      "energy": 10060.0,
+      "changePercent": -8.5787,
+      "meanAbsoluteDifference": 0.016993,
+      "pixelsAbove8": 14,
+      "pixelsAbove20": 14,
+      "pixelsAbove40": 13
+    },
+    {
+      "frame": 10,
+      "time": 0.416667,
+      "energy": 8093.0,
+      "changePercent": -19.55268,
+      "meanAbsoluteDifference": 0.007299,
+      "pixelsAbove8": 0,
+      "pixelsAbove20": 0,
+      "pixelsAbove40": 0
+    },
+    {
+      "frame": 11,
+      "time": 0.458333,
+      "energy": 7852.0,
+      "changePercent": -2.97788,
+      "meanAbsoluteDifference": 0.001302,
+      "pixelsAbove8": 0,
+      "pixelsAbove20": 0,
+      "pixelsAbove40": 0
+    },
+    {
+      "frame": 12,
+      "time": 0.5,
+      "energy": 7885.0,
+      "changePercent": 0.42028,
+      "meanAbsoluteDifference": 0.000198,
+      "pixelsAbove8": 0,
+      "pixelsAbove20": 0,
+      "pixelsAbove40": 0
+    },
+    {
+      "frame": 13,
+      "time": 0.541667,
+      "energy": 7860.0,
+      "changePercent": -0.31706,
+      "meanAbsoluteDifference": 0.000357,
+      "pixelsAbove8": 0,
+      "pixelsAbove20": 0,
+      "pixelsAbove40": 0
+    },
+    {
+      "frame": 14,
+      "time": 0.583333,
+      "energy": 7860.0,
+      "changePercent": 0.0,
+      "meanAbsoluteDifference": 0.000422,
+      "pixelsAbove8": 0,
+      "pixelsAbove20": 0,
+      "pixelsAbove40": 0
+    },
+    {
+      "frame": 15,
+      "time": 0.625,
+      "energy": 8107.0,
+      "changePercent": 3.14249,
+      "meanAbsoluteDifference": 0.002477,
+      "pixelsAbove8": 0,
+      "pixelsAbove20": 0,
+      "pixelsAbove40": 0
+    },
+    {
+      "frame": 16,
+      "time": 0.666667,
+      "energy": 8107.0,
+      "changePercent": 0.0,
+      "meanAbsoluteDifference": 0.0,
+      "pixelsAbove8": 0,
+      "pixelsAbove20": 0,
+      "pixelsAbove40": 0
+    },
+    {
+      "frame": 17,
+      "time": 0.708333,
+      "energy": 8967.0,
+      "changePercent": 10.60812,
+      "meanAbsoluteDifference": 0.002572,
+      "pixelsAbove8": 16,
+      "pixelsAbove20": 13,
+      "pixelsAbove40": 8
+    },
+    {
+      "frame": 18,
+      "time": 0.75,
+      "energy": 8603.0,
+      "changePercent": -4.05933,
+      "meanAbsoluteDifference": 0.00217,
+      "pixelsAbove8": 17,
+      "pixelsAbove20": 14,
+      "pixelsAbove40": 12
+    },
+    {
+      "frame": 19,
+      "time": 0.791667,
+      "energy": 9171.0,
+      "changePercent": 6.60235,
+      "meanAbsoluteDifference": 0.00688,
+      "pixelsAbove8": 25,
+      "pixelsAbove20": 20,
+      "pixelsAbove40": 17
+    },
+    {
+      "frame": 20,
+      "time": 0.833333,
+      "energy": 9829.0,
+      "changePercent": 7.17479,
+      "meanAbsoluteDifference": 0.011465,
+      "pixelsAbove8": 39,
+      "pixelsAbove20": 28,
+      "pixelsAbove40": 22
+    },
+    {
+      "frame": 21,
+      "time": 0.875,
+      "energy": 11724.0,
+      "changePercent": 19.27968,
+      "meanAbsoluteDifference": 0.01981,
+      "pixelsAbove8": 74,
+      "pixelsAbove20": 53,
+      "pixelsAbove40": 35
+    },
+    {
+      "frame": 22,
+      "time": 0.916667,
+      "energy": 15301.0,
+      "changePercent": 30.51006,
+      "meanAbsoluteDifference": 0.03191,
+      "pixelsAbove8": 126,
+      "pixelsAbove20": 101,
+      "pixelsAbove40": 66
+    },
+    {
+      "frame": 23,
+      "time": 0.958333,
+      "energy": 20028.0,
+      "changePercent": 30.89341,
+      "meanAbsoluteDifference": 0.042283,
+      "pixelsAbove8": 225,
+      "pixelsAbove20": 160,
+      "pixelsAbove40": 112
+    },
+    {
+      "frame": 24,
+      "time": 1.0,
+      "energy": 26598.0,
+      "changePercent": 32.80407,
+      "meanAbsoluteDifference": 0.061021,
+      "pixelsAbove8": 343,
+      "pixelsAbove20": 245,
+      "pixelsAbove40": 160
+    },
+    {
+      "frame": 25,
+      "time": 1.041667,
+      "energy": 34934.0,
+      "changePercent": 31.3407,
+      "meanAbsoluteDifference": 0.080353,
+      "pixelsAbove8": 526,
+      "pixelsAbove20": 387,
+      "pixelsAbove40": 233
+    },
+    {
+      "frame": 26,
+      "time": 1.083333,
+      "energy": 41842.0,
+      "changePercent": 19.77443,
+      "meanAbsoluteDifference": 0.080852,
+      "pixelsAbove8": 683,
+      "pixelsAbove20": 504,
+      "pixelsAbove40": 288
+    },
+    {
+      "frame": 27,
+      "time": 1.125,
+      "energy": 52953.0,
+      "changePercent": 26.55466,
+      "meanAbsoluteDifference": 0.098282,
+      "pixelsAbove8": 926,
+      "pixelsAbove20": 683,
+      "pixelsAbove40": 395
+    },
+    {
+      "frame": 28,
+      "time": 1.166667,
+      "energy": 61507.0,
+      "changePercent": 16.15395,
+      "meanAbsoluteDifference": 0.093348,
+      "pixelsAbove8": 1116,
+      "pixelsAbove20": 834,
+      "pixelsAbove40": 466
+    },
+    {
+      "frame": 29,
+      "time": 1.208333,
+      "energy": 72559.0,
+      "changePercent": 17.96869,
+      "meanAbsoluteDifference": 0.102684,
+      "pixelsAbove8": 1363,
+      "pixelsAbove20": 1009,
+      "pixelsAbove40": 577
+    },
+    {
+      "frame": 30,
+      "time": 1.25,
+      "energy": 54131.0,
+      "changePercent": -25.39726,
+      "meanAbsoluteDifference": 0.190451,
+      "pixelsAbove8": 1167,
+      "pixelsAbove20": 651,
+      "pixelsAbove40": 317
+    },
+    {
+      "frame": 31,
+      "time": 1.291667,
+      "energy": 69957.0,
+      "changePercent": 29.23648,
+      "meanAbsoluteDifference": 0.125063,
+      "pixelsAbove8": 1499,
+      "pixelsAbove20": 932,
+      "pixelsAbove40": 467
+    },
+    {
+      "frame": 32,
+      "time": 1.333333,
+      "energy": 90657.0,
+      "changePercent": 29.58961,
+      "meanAbsoluteDifference": 0.154827,
+      "pixelsAbove8": 1947,
+      "pixelsAbove20": 1267,
+      "pixelsAbove40": 691
+    },
+    {
+      "frame": 33,
+      "time": 1.375,
+      "energy": 107906.0,
+      "changePercent": 19.02666,
+      "meanAbsoluteDifference": 0.131287,
+      "pixelsAbove8": 2325,
+      "pixelsAbove20": 1569,
+      "pixelsAbove40": 842
+    },
+    {
+      "frame": 34,
+      "time": 1.416667,
+      "energy": 121746.0,
+      "changePercent": 12.82598,
+      "meanAbsoluteDifference": 0.121163,
+      "pixelsAbove8": 2596,
+      "pixelsAbove20": 1767,
+      "pixelsAbove40": 975
+    },
+    {
+      "frame": 35,
+      "time": 1.458333,
+      "energy": 141574.0,
+      "changePercent": 16.28637,
+      "meanAbsoluteDifference": 0.139836,
+      "pixelsAbove8": 3014,
+      "pixelsAbove20": 2080,
+      "pixelsAbove40": 1169
+    },
+    {
+      "frame": 36,
+      "time": 1.5,
+      "energy": 156233.0,
+      "changePercent": 10.3543,
+      "meanAbsoluteDifference": 0.127387,
+      "pixelsAbove8": 3281,
+      "pixelsAbove20": 2290,
+      "pixelsAbove40": 1321
+    },
+    {
+      "frame": 37,
+      "time": 1.541667,
+      "energy": 178976.0,
+      "changePercent": 14.5571,
+      "meanAbsoluteDifference": 0.149692,
+      "pixelsAbove8": 3753,
+      "pixelsAbove20": 2664,
+      "pixelsAbove40": 1557
+    },
+    {
+      "frame": 38,
+      "time": 1.583333,
+      "energy": 194491.0,
+      "changePercent": 8.66876,
+      "meanAbsoluteDifference": 0.133298,
+      "pixelsAbove8": 4051,
+      "pixelsAbove20": 2922,
+      "pixelsAbove40": 1722
+    },
+    {
+      "frame": 39,
+      "time": 1.625,
+      "energy": 217943.0,
+      "changePercent": 12.05814,
+      "meanAbsoluteDifference": 0.155718,
+      "pixelsAbove8": 4516,
+      "pixelsAbove20": 3307,
+      "pixelsAbove40": 1955
+    },
+    {
+      "frame": 40,
+      "time": 1.666667,
+      "energy": 157801.0,
+      "changePercent": -27.59529,
+      "meanAbsoluteDifference": 0.383109,
+      "pixelsAbove8": 4347,
+      "pixelsAbove20": 2596,
+      "pixelsAbove40": 973
+    },
+    {
+      "frame": 41,
+      "time": 1.708333,
+      "energy": 182862.0,
+      "changePercent": 15.88139,
+      "meanAbsoluteDifference": 0.168386,
+      "pixelsAbove8": 4855,
+      "pixelsAbove20": 3004,
+      "pixelsAbove40": 1238
+    },
+    {
+      "frame": 42,
+      "time": 1.75,
+      "energy": 200363.0,
+      "changePercent": 9.57061,
+      "meanAbsoluteDifference": 0.144894,
+      "pixelsAbove8": 5198,
+      "pixelsAbove20": 3291,
+      "pixelsAbove40": 1434
+    },
+    {
+      "frame": 43,
+      "time": 1.791667,
+      "energy": 227571.0,
+      "changePercent": 13.57935,
+      "meanAbsoluteDifference": 0.174152,
+      "pixelsAbove8": 5744,
+      "pixelsAbove20": 3742,
+      "pixelsAbove40": 1749
+    },
+    {
+      "frame": 44,
+      "time": 1.833333,
+      "energy": 246711.0,
+      "changePercent": 8.41056,
+      "meanAbsoluteDifference": 0.150291,
+      "pixelsAbove8": 6108,
+      "pixelsAbove20": 4034,
+      "pixelsAbove40": 1939
+    },
+    {
+      "frame": 45,
+      "time": 1.875,
+      "energy": 266537.0,
+      "changePercent": 8.03612,
+      "meanAbsoluteDifference": 0.147262,
+      "pixelsAbove8": 6494,
+      "pixelsAbove20": 4359,
+      "pixelsAbove40": 2156
+    },
+    {
+      "frame": 46,
+      "time": 1.916667,
+      "energy": 296198.0,
+      "changePercent": 11.12829,
+      "meanAbsoluteDifference": 0.185565,
+      "pixelsAbove8": 7097,
+      "pixelsAbove20": 4845,
+      "pixelsAbove40": 2472
+    },
+    {
+      "frame": 47,
+      "time": 1.958333,
+      "energy": 316812.0,
+      "changePercent": 6.95953,
+      "meanAbsoluteDifference": 0.14717,
+      "pixelsAbove8": 7489,
+      "pixelsAbove20": 5182,
+      "pixelsAbove40": 2686
+    },
+    {
+      "frame": 48,
+      "time": 2.0,
+      "energy": 348228.0,
+      "changePercent": 9.91629,
+      "meanAbsoluteDifference": 0.171663,
+      "pixelsAbove8": 8074,
+      "pixelsAbove20": 5667,
+      "pixelsAbove40": 3020
+    },
+    {
+      "frame": 49,
+      "time": 2.041667,
+      "energy": 369724.0,
+      "changePercent": 6.17297,
+      "meanAbsoluteDifference": 0.157774,
+      "pixelsAbove8": 8488,
+      "pixelsAbove20": 6007,
+      "pixelsAbove40": 3251
+    },
+    {
+      "frame": 50,
+      "time": 2.083333,
+      "energy": 402620.0,
+      "changePercent": 8.89745,
+      "meanAbsoluteDifference": 0.195569,
+      "pixelsAbove8": 9119,
+      "pixelsAbove20": 6540,
+      "pixelsAbove40": 3599
+    },
+    {
+      "frame": 51,
+      "time": 2.125,
+      "energy": 300440.0,
+      "changePercent": -25.37877,
+      "meanAbsoluteDifference": 0.574591,
+      "pixelsAbove8": 8711,
+      "pixelsAbove20": 5404,
+      "pixelsAbove40": 1937
+    },
+    {
+      "frame": 52,
+      "time": 2.166667,
+      "energy": 334769.0,
+      "changePercent": 11.42624,
+      "meanAbsoluteDifference": 0.213734,
+      "pixelsAbove8": 9380,
+      "pixelsAbove20": 5943,
+      "pixelsAbove40": 2317
+    },
+    {
+      "frame": 53,
+      "time": 2.208333,
+      "energy": 358697.0,
+      "changePercent": 7.14762,
+      "meanAbsoluteDifference": 0.178543,
+      "pixelsAbove8": 9835,
+      "pixelsAbove20": 6312,
+      "pixelsAbove40": 2560
+    },
+    {
+      "frame": 54,
+      "time": 2.25,
+      "energy": 394514.0,
+      "changePercent": 9.98531,
+      "meanAbsoluteDifference": 0.218204,
+      "pixelsAbove8": 10503,
+      "pixelsAbove20": 6878,
+      "pixelsAbove40": 2962
+    },
+    {
+      "frame": 55,
+      "time": 2.291667,
+      "energy": 418698.0,
+      "changePercent": 6.13007,
+      "meanAbsoluteDifference": 0.175788,
+      "pixelsAbove8": 10982,
+      "pixelsAbove20": 7257,
+      "pixelsAbove40": 3227
+    },
+    {
+      "frame": 56,
+      "time": 2.333333,
+      "energy": 455544.0,
+      "changePercent": 8.80014,
+      "meanAbsoluteDifference": 0.218337,
+      "pixelsAbove8": 11689,
+      "pixelsAbove20": 7860,
+      "pixelsAbove40": 3634
+    },
+    {
+      "frame": 57,
+      "time": 2.375,
+      "energy": 480416.0,
+      "changePercent": 5.45985,
+      "meanAbsoluteDifference": 0.180604,
+      "pixelsAbove8": 12147,
+      "pixelsAbove20": 8244,
+      "pixelsAbove40": 3905
+    },
+    {
+      "frame": 58,
+      "time": 2.416667,
+      "energy": 505820.0,
+      "changePercent": 5.28792,
+      "meanAbsoluteDifference": 0.181803,
+      "pixelsAbove8": 12631,
+      "pixelsAbove20": 8646,
+      "pixelsAbove40": 4175
+    },
+    {
+      "frame": 59,
+      "time": 2.458333,
+      "energy": 543231.0,
+      "changePercent": 7.39611,
+      "meanAbsoluteDifference": 0.218169,
+      "pixelsAbove8": 13295,
+      "pixelsAbove20": 9211,
+      "pixelsAbove40": 4602
+    },
+    {
+      "frame": 60,
+      "time": 2.5,
+      "energy": 568243.0,
+      "changePercent": 4.6043,
+      "meanAbsoluteDifference": 0.183504,
+      "pixelsAbove8": 13774,
+      "pixelsAbove20": 9616,
+      "pixelsAbove40": 4887
+    },
+    {
+      "frame": 61,
+      "time": 2.541667,
+      "energy": 604636.0,
+      "changePercent": 6.40448,
+      "meanAbsoluteDifference": 0.246034,
+      "pixelsAbove8": 14491,
+      "pixelsAbove20": 10185,
+      "pixelsAbove40": 5283
+    },
+    {
+      "frame": 62,
+      "time": 2.583333,
+      "energy": 467977.0,
+      "changePercent": -22.60186,
+      "meanAbsoluteDifference": 0.716785,
+      "pixelsAbove8": 13986,
+      "pixelsAbove20": 8739,
+      "pixelsAbove40": 3030
+    },
+    {
+      "frame": 63,
+      "time": 2.625,
+      "energy": 506563.0,
+      "changePercent": 8.24528,
+      "meanAbsoluteDifference": 0.236691,
+      "pixelsAbove8": 14701,
+      "pixelsAbove20": 9381,
+      "pixelsAbove40": 3456
+    },
+    {
+      "frame": 64,
+      "time": 2.666667,
+      "energy": 533335.0,
+      "changePercent": 5.28503,
+      "meanAbsoluteDifference": 0.192586,
+      "pixelsAbove8": 15186,
+      "pixelsAbove20": 9766,
+      "pixelsAbove40": 3741
+    },
+    {
+      "frame": 65,
+      "time": 2.708333,
+      "energy": 571887.0,
+      "changePercent": 7.22848,
+      "meanAbsoluteDifference": 0.22894,
+      "pixelsAbove8": 15902,
+      "pixelsAbove20": 10361,
+      "pixelsAbove40": 4179
+    },
+    {
+      "frame": 66,
+      "time": 2.75,
+      "energy": 598425.0,
+      "changePercent": 4.64043,
+      "meanAbsoluteDifference": 0.19191,
+      "pixelsAbove8": 16389,
+      "pixelsAbove20": 10777,
+      "pixelsAbove40": 4446
+    },
+    {
+      "frame": 67,
+      "time": 2.791667,
+      "energy": 638023.0,
+      "changePercent": 6.61704,
+      "meanAbsoluteDifference": 0.235277,
+      "pixelsAbove8": 17113,
+      "pixelsAbove20": 11375,
+      "pixelsAbove40": 4890
+    },
+    {
+      "frame": 68,
+      "time": 2.833333,
+      "energy": 664642.0,
+      "changePercent": 4.17211,
+      "meanAbsoluteDifference": 0.191541,
+      "pixelsAbove8": 17583,
+      "pixelsAbove20": 11798,
+      "pixelsAbove40": 5182
+    },
+    {
+      "frame": 69,
+      "time": 2.875,
+      "energy": 691852.0,
+      "changePercent": 4.09393,
+      "meanAbsoluteDifference": 0.19411,
+      "pixelsAbove8": 18079,
+      "pixelsAbove20": 12207,
+      "pixelsAbove40": 5466
+    },
+    {
+      "frame": 70,
+      "time": 2.916667,
+      "energy": 733192.0,
+      "changePercent": 5.97527,
+      "meanAbsoluteDifference": 0.239824,
+      "pixelsAbove8": 18805,
+      "pixelsAbove20": 12851,
+      "pixelsAbove40": 5946
+    },
+    {
+      "frame": 71,
+      "time": 2.958333,
+      "energy": 761418.0,
+      "changePercent": 3.84974,
+      "meanAbsoluteDifference": 0.193933,
+      "pixelsAbove8": 19339,
+      "pixelsAbove20": 13267,
+      "pixelsAbove40": 6255
+    },
+    {
+      "frame": 72,
+      "time": 3.0,
+      "energy": 804420.0,
+      "changePercent": 5.64762,
+      "meanAbsoluteDifference": 0.241478,
+      "pixelsAbove8": 20100,
+      "pixelsAbove20": 13915,
+      "pixelsAbove40": 6731
+    },
+    {
+      "frame": 73,
+      "time": 3.041667,
+      "energy": 640434.0,
+      "changePercent": -20.38562,
+      "meanAbsoluteDifference": 0.829409,
+      "pixelsAbove8": 19396,
+      "pixelsAbove20": 12173,
+      "pixelsAbove40": 4048
+    },
+    {
+      "frame": 74,
+      "time": 3.083333,
+      "energy": 683517.0,
+      "changePercent": 6.72716,
+      "meanAbsoluteDifference": 0.25217,
+      "pixelsAbove8": 20169,
+      "pixelsAbove20": 12822,
+      "pixelsAbove40": 4574
+    },
+    {
+      "frame": 75,
+      "time": 3.125,
+      "energy": 713087.0,
+      "changePercent": 4.32615,
+      "meanAbsoluteDifference": 0.202761,
+      "pixelsAbove8": 20714,
+      "pixelsAbove20": 13246,
+      "pixelsAbove40": 4895
+    },
+    {
+      "frame": 76,
+      "time": 3.166667,
+      "energy": 758410.0,
+      "changePercent": 6.35589,
+      "meanAbsoluteDifference": 0.225122,
+      "pixelsAbove8": 21507,
+      "pixelsAbove20": 13943,
+      "pixelsAbove40": 5405
+    },
+    {
+      "frame": 77,
+      "time": 3.208333,
+      "energy": 788411.0,
+      "changePercent": 3.95578,
+      "meanAbsoluteDifference": 0.171696,
+      "pixelsAbove8": 22010,
+      "pixelsAbove20": 14372,
+      "pixelsAbove40": 5748
+    },
+    {
+      "frame": 78,
+      "time": 3.25,
+      "energy": 834131.0,
+      "changePercent": 5.79901,
+      "meanAbsoluteDifference": 0.254966,
+      "pixelsAbove8": 22838,
+      "pixelsAbove20": 15098,
+      "pixelsAbove40": 6257
+    },
+    {
+      "frame": 79,
+      "time": 3.291667,
+      "energy": 864697.0,
+      "changePercent": 3.66441,
+      "meanAbsoluteDifference": 0.216317,
+      "pixelsAbove8": 23368,
+      "pixelsAbove20": 15547,
+      "pixelsAbove40": 6599
+    },
+    {
+      "frame": 80,
+      "time": 3.333333,
+      "energy": 910445.0,
+      "changePercent": 5.29064,
+      "meanAbsoluteDifference": 0.261766,
+      "pixelsAbove8": 24201,
+      "pixelsAbove20": 16244,
+      "pixelsAbove40": 7105
+    },
+    {
+      "frame": 81,
+      "time": 3.375,
+      "energy": 941238.0,
+      "changePercent": 3.38219,
+      "meanAbsoluteDifference": 0.206299,
+      "pixelsAbove8": 24702,
+      "pixelsAbove20": 16723,
+      "pixelsAbove40": 7449
+    },
+    {
+      "frame": 82,
+      "time": 3.416667,
+      "energy": 971956.0,
+      "changePercent": 3.26357,
+      "meanAbsoluteDifference": 0.211826,
+      "pixelsAbove8": 25264,
+      "pixelsAbove20": 17177,
+      "pixelsAbove40": 7774
+    },
+    {
+      "frame": 83,
+      "time": 3.458333,
+      "energy": 1018504.0,
+      "changePercent": 4.78911,
+      "meanAbsoluteDifference": 0.263254,
+      "pixelsAbove8": 26060,
+      "pixelsAbove20": 17883,
+      "pixelsAbove40": 8305
+    },
+    {
+      "frame": 84,
+      "time": 3.5,
+      "energy": 825111.0,
+      "changePercent": -18.98795,
+      "meanAbsoluteDifference": 0.943021,
+      "pixelsAbove8": 25290,
+      "pixelsAbove20": 15875,
+      "pixelsAbove40": 5358
+    },
+    {
+      "frame": 85,
+      "time": 3.541667,
+      "energy": 870546.0,
+      "changePercent": 5.50653,
+      "meanAbsoluteDifference": 0.248995,
+      "pixelsAbove8": 26087,
+      "pixelsAbove20": 16569,
+      "pixelsAbove40": 5851
+    },
+    {
+      "frame": 86,
+      "time": 3.583333,
+      "energy": 901399.0,
+      "changePercent": 3.5441,
+      "meanAbsoluteDifference": 0.211741,
+      "pixelsAbove8": 26644,
+      "pixelsAbove20": 17012,
+      "pixelsAbove40": 6181
+    },
+    {
+      "frame": 87,
+      "time": 3.625,
+      "energy": 947764.0,
+      "changePercent": 5.14367,
+      "meanAbsoluteDifference": 0.259395,
+      "pixelsAbove8": 27448,
+      "pixelsAbove20": 17705,
+      "pixelsAbove40": 6719
+    },
+    {
+      "frame": 88,
+      "time": 3.666667,
+      "energy": 978387.0,
+      "changePercent": 3.23108,
+      "meanAbsoluteDifference": 0.199026,
+      "pixelsAbove8": 27985,
+      "pixelsAbove20": 18137,
+      "pixelsAbove40": 7048
+    },
+    {
+      "frame": 89,
+      "time": 3.708333,
+      "energy": 1024368.0,
+      "changePercent": 4.69967,
+      "meanAbsoluteDifference": 0.265844,
+      "pixelsAbove8": 28775,
+      "pixelsAbove20": 18846,
+      "pixelsAbove40": 7561
+    },
+    {
+      "frame": 90,
+      "time": 3.75,
+      "energy": 1055249.0,
+      "changePercent": 3.01464,
+      "meanAbsoluteDifference": 0.199593,
+      "pixelsAbove8": 29315,
+      "pixelsAbove20": 19283,
+      "pixelsAbove40": 7890
+    },
+    {
+      "frame": 91,
+      "time": 3.791667,
+      "energy": 1094526.0,
+      "changePercent": 3.72206,
+      "meanAbsoluteDifference": 0.287895,
+      "pixelsAbove8": 30011,
+      "pixelsAbove20": 19790,
+      "pixelsAbove40": 8344
+    },
+    {
+      "frame": 92,
+      "time": 3.833333,
+      "energy": 1124325.0,
+      "changePercent": 2.72255,
+      "meanAbsoluteDifference": 0.223422,
+      "pixelsAbove8": 30500,
+      "pixelsAbove20": 20248,
+      "pixelsAbove40": 8647
+    },
+    {
+      "frame": 93,
+      "time": 3.875,
+      "energy": 1154520.0,
+      "changePercent": 2.68561,
+      "meanAbsoluteDifference": 0.204722,
+      "pixelsAbove8": 31022,
+      "pixelsAbove20": 20677,
+      "pixelsAbove40": 8994
+    },
+    {
+      "frame": 94,
+      "time": 3.916667,
+      "energy": 1200031.0,
+      "changePercent": 3.94198,
+      "meanAbsoluteDifference": 0.246618,
+      "pixelsAbove8": 31725,
+      "pixelsAbove20": 21332,
+      "pixelsAbove40": 9518
+    },
+    {
+      "frame": 95,
+      "time": 3.958333,
+      "energy": 991980.0,
+      "changePercent": -17.33714,
+      "meanAbsoluteDifference": 0.940721,
+      "pixelsAbove8": 30829,
+      "pixelsAbove20": 19011,
+      "pixelsAbove40": 6516
+    },
+    {
+      "frame": 96,
+      "time": 4.0,
+      "energy": 1071018.0,
+      "changePercent": 7.9677,
+      "meanAbsoluteDifference": 0.381806,
+      "pixelsAbove8": 32122,
+      "pixelsAbove20": 20191,
+      "pixelsAbove40": 7469
+    },
+    {
+      "frame": 97,
+      "time": 4.041667,
+      "energy": 1114935.0,
+      "changePercent": 4.10049,
+      "meanAbsoluteDifference": 0.258119,
+      "pixelsAbove8": 32802,
+      "pixelsAbove20": 20811,
+      "pixelsAbove40": 7985
+    },
+    {
+      "frame": 98,
+      "time": 4.083333,
+      "energy": 1145182.0,
+      "changePercent": 2.71289,
+      "meanAbsoluteDifference": 0.210884,
+      "pixelsAbove8": 33286,
+      "pixelsAbove20": 21265,
+      "pixelsAbove40": 8321
+    },
+    {
+      "frame": 99,
+      "time": 4.125,
+      "energy": 1190426.0,
+      "changePercent": 3.95081,
+      "meanAbsoluteDifference": 0.240105,
+      "pixelsAbove8": 34028,
+      "pixelsAbove20": 21911,
+      "pixelsAbove40": 8809
+    },
+    {
+      "frame": 100,
+      "time": 4.166667,
+      "energy": 1219507.0,
+      "changePercent": 2.44291,
+      "meanAbsoluteDifference": 0.208525,
+      "pixelsAbove8": 34513,
+      "pixelsAbove20": 22320,
+      "pixelsAbove40": 9153
+    },
+    {
+      "frame": 101,
+      "time": 4.208333,
+      "energy": 1263762.0,
+      "changePercent": 3.62893,
+      "meanAbsoluteDifference": 0.256138,
+      "pixelsAbove8": 35226,
+      "pixelsAbove20": 22970,
+      "pixelsAbove40": 9646
+    },
+    {
+      "frame": 102,
+      "time": 4.25,
+      "energy": 1293390.0,
+      "changePercent": 2.34443,
+      "meanAbsoluteDifference": 0.202457,
+      "pixelsAbove8": 35695,
+      "pixelsAbove20": 23400,
+      "pixelsAbove40": 9996
+    },
+    {
+      "frame": 103,
+      "time": 4.291667,
+      "energy": 1337939.0,
+      "changePercent": 3.44436,
+      "meanAbsoluteDifference": 0.247191,
+      "pixelsAbove8": 36446,
+      "pixelsAbove20": 24075,
+      "pixelsAbove40": 10494
+    },
+    {
+      "frame": 104,
+      "time": 4.333333,
+      "energy": 1367287.0,
+      "changePercent": 2.19352,
+      "meanAbsoluteDifference": 0.206396,
+      "pixelsAbove8": 36905,
+      "pixelsAbove20": 24503,
+      "pixelsAbove40": 10823
+    },
+    {
+      "frame": 105,
+      "time": 4.375,
+      "energy": 1141729.0,
+      "changePercent": -16.49676,
+      "meanAbsoluteDifference": 1.041607,
+      "pixelsAbove8": 35798,
+      "pixelsAbove20": 21997,
+      "pixelsAbove40": 7534
+    },
+    {
+      "frame": 106,
+      "time": 4.416667,
+      "energy": 1184024.0,
+      "changePercent": 3.70447,
+      "meanAbsoluteDifference": 0.260632,
+      "pixelsAbove8": 36497,
+      "pixelsAbove20": 22577,
+      "pixelsAbove40": 8027
+    },
+    {
+      "frame": 107,
+      "time": 4.458333,
+      "energy": 1212931.0,
+      "changePercent": 2.44142,
+      "meanAbsoluteDifference": 0.20507,
+      "pixelsAbove8": 36975,
+      "pixelsAbove20": 23008,
+      "pixelsAbove40": 8330
+    },
+    {
+      "frame": 108,
+      "time": 4.5,
+      "energy": 1256713.0,
+      "changePercent": 3.6096,
+      "meanAbsoluteDifference": 0.247673,
+      "pixelsAbove8": 37669,
+      "pixelsAbove20": 23633,
+      "pixelsAbove40": 8816
+    },
+    {
+      "frame": 109,
+      "time": 4.541667,
+      "energy": 1285865.0,
+      "changePercent": 2.3197,
+      "meanAbsoluteDifference": 0.197727,
+      "pixelsAbove8": 38163,
+      "pixelsAbove20": 24095,
+      "pixelsAbove40": 9150
+    },
+    {
+      "frame": 110,
+      "time": 4.583333,
+      "energy": 1329007.0,
+      "changePercent": 3.3551,
+      "meanAbsoluteDifference": 0.251762,
+      "pixelsAbove8": 38822,
+      "pixelsAbove20": 24681,
+      "pixelsAbove40": 9663
+    },
+    {
+      "frame": 111,
+      "time": 4.625,
+      "energy": 1357592.0,
+      "changePercent": 2.15085,
+      "meanAbsoluteDifference": 0.201058,
+      "pixelsAbove8": 39276,
+      "pixelsAbove20": 25103,
+      "pixelsAbove40": 9985
+    },
+    {
+      "frame": 112,
+      "time": 4.666667,
+      "energy": 1400855.0,
+      "changePercent": 3.18675,
+      "meanAbsoluteDifference": 0.245083,
+      "pixelsAbove8": 39974,
+      "pixelsAbove20": 25706,
+      "pixelsAbove40": 10468
+    },
+    {
+      "frame": 113,
+      "time": 4.708333,
+      "energy": 1429843.0,
+      "changePercent": 2.06931,
+      "meanAbsoluteDifference": 0.201687,
+      "pixelsAbove8": 40465,
+      "pixelsAbove20": 26144,
+      "pixelsAbove40": 10791
+    },
+    {
+      "frame": 114,
+      "time": 4.75,
+      "energy": 1471870.0,
+      "changePercent": 2.93927,
+      "meanAbsoluteDifference": 0.242443,
+      "pixelsAbove8": 41106,
+      "pixelsAbove20": 26722,
+      "pixelsAbove40": 11269
+    },
+    {
+      "frame": 115,
+      "time": 4.791667,
+      "energy": 1495290.0,
+      "changePercent": 1.59117,
+      "meanAbsoluteDifference": 0.186273,
+      "pixelsAbove8": 41496,
+      "pixelsAbove20": 27034,
+      "pixelsAbove40": 11514
+    },
+    {
+      "frame": 116,
+      "time": 4.833333,
+      "energy": 1283414.0,
+      "changePercent": -14.16956,
+      "meanAbsoluteDifference": 1.098731,
+      "pixelsAbove8": 40692,
+      "pixelsAbove20": 24578,
+      "pixelsAbove40": 8440
+    },
+    {
+      "frame": 117,
+      "time": 4.875,
+      "energy": 1310599.0,
+      "changePercent": 2.11818,
+      "meanAbsoluteDifference": 0.216025,
+      "pixelsAbove8": 41096,
+      "pixelsAbove20": 24925,
+      "pixelsAbove40": 8752
+    },
+    {
+      "frame": 118,
+      "time": 4.916667,
+      "energy": 1338371.0,
+      "changePercent": 2.11903,
+      "meanAbsoluteDifference": 0.204518,
+      "pixelsAbove8": 41529,
+      "pixelsAbove20": 25308,
+      "pixelsAbove40": 9057
+    },
+    {
+      "frame": 119,
+      "time": 4.958333,
+      "energy": 1380184.0,
+      "changePercent": 3.12417,
+      "meanAbsoluteDifference": 0.224479,
+      "pixelsAbove8": 42212,
+      "pixelsAbove20": 25911,
+      "pixelsAbove40": 9525
+    },
+    {
+      "frame": 120,
+      "time": 5.0,
+      "energy": 1399859.0,
+      "changePercent": 1.42553,
+      "meanAbsoluteDifference": 0.281685,
+      "pixelsAbove8": 42549,
+      "pixelsAbove20": 26016,
+      "pixelsAbove40": 9756
+    },
+    {
+      "frame": 121,
+      "time": 5.041667,
+      "energy": 1436548.0,
+      "changePercent": 2.62091,
+      "meanAbsoluteDifference": 0.219775,
+      "pixelsAbove8": 43136,
+      "pixelsAbove20": 26525,
+      "pixelsAbove40": 10178
+    },
+    {
+      "frame": 122,
+      "time": 5.083333,
+      "energy": 1468878.0,
+      "changePercent": 2.25053,
+      "meanAbsoluteDifference": 0.220679,
+      "pixelsAbove8": 43650,
+      "pixelsAbove20": 26976,
+      "pixelsAbove40": 10523
+    },
+    {
+      "frame": 123,
+      "time": 5.125,
+      "energy": 1510412.0,
+      "changePercent": 2.8276,
+      "meanAbsoluteDifference": 0.251372,
+      "pixelsAbove8": 44306,
+      "pixelsAbove20": 27552,
+      "pixelsAbove40": 11000
+    },
+    {
+      "frame": 124,
+      "time": 5.166667,
+      "energy": 1538362.0,
+      "changePercent": 1.85049,
+      "meanAbsoluteDifference": 0.182594,
+      "pixelsAbove8": 44764,
+      "pixelsAbove20": 27941,
+      "pixelsAbove40": 11334
+    },
+    {
+      "frame": 125,
+      "time": 5.208333,
+      "energy": 1579802.0,
+      "changePercent": 2.69377,
+      "meanAbsoluteDifference": 0.247608,
+      "pixelsAbove8": 45405,
+      "pixelsAbove20": 28536,
+      "pixelsAbove40": 11789
+    },
+    {
+      "frame": 126,
+      "time": 5.25,
+      "energy": 1607339.0,
+      "changePercent": 1.74307,
+      "meanAbsoluteDifference": 0.18069,
+      "pixelsAbove8": 45848,
+      "pixelsAbove20": 28921,
+      "pixelsAbove40": 12115
+    },
+    {
+      "frame": 127,
+      "time": 5.291667,
+      "energy": 1392083.0,
+      "changePercent": -13.39207,
+      "meanAbsoluteDifference": 1.081091,
+      "pixelsAbove8": 44876,
+      "pixelsAbove20": 26445,
+      "pixelsAbove40": 8902
+    },
+    {
+      "frame": 128,
+      "time": 5.333333,
+      "energy": 1417955.0,
+      "changePercent": 1.85851,
+      "meanAbsoluteDifference": 0.202242,
+      "pixelsAbove8": 45306,
+      "pixelsAbove20": 26808,
+      "pixelsAbove40": 9206
+    },
+    {
+      "frame": 129,
+      "time": 5.375,
+      "energy": 1443725.0,
+      "changePercent": 1.81741,
+      "meanAbsoluteDifference": 0.196487,
+      "pixelsAbove8": 45721,
+      "pixelsAbove20": 27170,
+      "pixelsAbove40": 9509
+    },
+    {
+      "frame": 130,
+      "time": 5.416667,
+      "energy": 1483135.0,
+      "changePercent": 2.72974,
+      "meanAbsoluteDifference": 0.225105,
+      "pixelsAbove8": 46390,
+      "pixelsAbove20": 27760,
+      "pixelsAbove40": 9961
+    },
+    {
+      "frame": 131,
+      "time": 5.458333,
+      "energy": 1509184.0,
+      "changePercent": 1.75635,
+      "meanAbsoluteDifference": 0.171309,
+      "pixelsAbove8": 46800,
+      "pixelsAbove20": 28138,
+      "pixelsAbove40": 10259
+    },
+    {
+      "frame": 132,
+      "time": 5.5,
+      "energy": 1549313.0,
+      "changePercent": 2.65899,
+      "meanAbsoluteDifference": 0.204235,
+      "pixelsAbove8": 47480,
+      "pixelsAbove20": 28748,
+      "pixelsAbove40": 10734
+    },
+    {
+      "frame": 133,
+      "time": 5.541667,
+      "energy": 1576060.0,
+      "changePercent": 1.72638,
+      "meanAbsoluteDifference": 0.152143,
+      "pixelsAbove8": 47890,
+      "pixelsAbove20": 29131,
+      "pixelsAbove40": 11033
+    },
+    {
+      "frame": 134,
+      "time": 5.583333,
+      "energy": 1618202.0,
+      "changePercent": 2.67388,
+      "meanAbsoluteDifference": 0.195979,
+      "pixelsAbove8": 48583,
+      "pixelsAbove20": 29742,
+      "pixelsAbove40": 11516
+    },
+    {
+      "frame": 135,
+      "time": 5.625,
+      "energy": 1646182.0,
+      "changePercent": 1.72908,
+      "meanAbsoluteDifference": 0.150344,
+      "pixelsAbove8": 49028,
+      "pixelsAbove20": 30147,
+      "pixelsAbove40": 11833
+    },
+    {
+      "frame": 136,
+      "time": 5.666667,
+      "energy": 1688195.0,
+      "changePercent": 2.55215,
+      "meanAbsoluteDifference": 0.194396,
+      "pixelsAbove8": 49695,
+      "pixelsAbove20": 30738,
+      "pixelsAbove40": 12309
+    },
+    {
+      "frame": 137,
+      "time": 5.708333,
+      "energy": 1716341.0,
+      "changePercent": 1.66722,
+      "meanAbsoluteDifference": 0.147507,
+      "pixelsAbove8": 50151,
+      "pixelsAbove20": 31157,
+      "pixelsAbove40": 12614
+    },
+    {
+      "frame": 138,
+      "time": 5.75,
+      "energy": 1474418.0,
+      "changePercent": -14.09528,
+      "meanAbsoluteDifference": 1.094446,
+      "pixelsAbove8": 48636,
+      "pixelsAbove20": 28071,
+      "pixelsAbove40": 8977
+    },
+    {
+      "frame": 139,
+      "time": 5.791667,
+      "energy": 1500867.0,
+      "changePercent": 1.79386,
+      "meanAbsoluteDifference": 0.165383,
+      "pixelsAbove8": 49055,
+      "pixelsAbove20": 28459,
+      "pixelsAbove40": 9286
+    },
+    {
+      "frame": 140,
+      "time": 5.833333,
+      "energy": 1543233.0,
+      "changePercent": 2.82277,
+      "meanAbsoluteDifference": 0.198182,
+      "pixelsAbove8": 49746,
+      "pixelsAbove20": 29038,
+      "pixelsAbove40": 9779
+    },
+    {
+      "frame": 141,
+      "time": 5.875,
+      "energy": 1571110.0,
+      "changePercent": 1.8064,
+      "meanAbsoluteDifference": 0.149184,
+      "pixelsAbove8": 50205,
+      "pixelsAbove20": 29457,
+      "pixelsAbove40": 10095
+    },
+    {
+      "frame": 142,
+      "time": 5.916667,
+      "energy": 1613191.0,
+      "changePercent": 2.67842,
+      "meanAbsoluteDifference": 0.195896,
+      "pixelsAbove8": 50869,
+      "pixelsAbove20": 30034,
+      "pixelsAbove40": 10552
+    },
+    {
+      "frame": 143,
+      "time": 5.958333,
+      "energy": 1641195.0,
+      "changePercent": 1.73594,
+      "meanAbsoluteDifference": 0.149639,
+      "pixelsAbove8": 51349,
+      "pixelsAbove20": 30466,
+      "pixelsAbove40": 10859
+    },
+    {
+      "frame": 144,
+      "time": 6.0,
+      "energy": 1668903.0,
+      "changePercent": 1.68828,
+      "meanAbsoluteDifference": 0.148481,
+      "pixelsAbove8": 51774,
+      "pixelsAbove20": 30834,
+      "pixelsAbove40": 11186
+    },
+    {
+      "frame": 145,
+      "time": 6.041667,
+      "energy": 1710924.0,
+      "changePercent": 2.51788,
+      "meanAbsoluteDifference": 0.194479,
+      "pixelsAbove8": 52458,
+      "pixelsAbove20": 31456,
+      "pixelsAbove40": 11657
+    },
+    {
+      "frame": 146,
+      "time": 6.083333,
+      "energy": 1741814.0,
+      "changePercent": 1.80546,
+      "meanAbsoluteDifference": 0.160369,
+      "pixelsAbove8": 52952,
+      "pixelsAbove20": 31917,
+      "pixelsAbove40": 12008
+    },
+    {
+      "frame": 147,
+      "time": 6.125,
+      "energy": 1783486.0,
+      "changePercent": 2.39245,
+      "meanAbsoluteDifference": 0.194665,
+      "pixelsAbove8": 53622,
+      "pixelsAbove20": 32517,
+      "pixelsAbove40": 12501
+    },
+    {
+      "frame": 148,
+      "time": 6.166667,
+      "energy": 1810699.0,
+      "changePercent": 1.52583,
+      "meanAbsoluteDifference": 0.145467,
+      "pixelsAbove8": 54059,
+      "pixelsAbove20": 32941,
+      "pixelsAbove40": 12796
+    },
+    {
+      "frame": 149,
+      "time": 6.208333,
+      "energy": 1564697.0,
+      "changePercent": -13.58602,
+      "meanAbsoluteDifference": 1.134786,
+      "pixelsAbove8": 52232,
+      "pixelsAbove20": 29500,
+      "pixelsAbove40": 9259
+    },
+    {
+      "frame": 150,
+      "time": 6.25,
+      "energy": 1576860.0,
+      "changePercent": 0.77734,
+      "meanAbsoluteDifference": 0.287449,
+      "pixelsAbove8": 52420,
+      "pixelsAbove20": 29301,
+      "pixelsAbove40": 9379
+    },
+    {
+      "frame": 151,
+      "time": 6.291667,
+      "energy": 1616245.0,
+      "changePercent": 2.49769,
+      "meanAbsoluteDifference": 0.21407,
+      "pixelsAbove8": 53022,
+      "pixelsAbove20": 29858,
+      "pixelsAbove40": 9840
+    },
+    {
+      "frame": 152,
+      "time": 6.333333,
+      "energy": 1643406.0,
+      "changePercent": 1.6805,
+      "meanAbsoluteDifference": 0.151599,
+      "pixelsAbove8": 53494,
+      "pixelsAbove20": 30252,
+      "pixelsAbove40": 10131
+    },
+    {
+      "frame": 153,
+      "time": 6.375,
+      "energy": 1683763.0,
+      "changePercent": 2.45569,
+      "meanAbsoluteDifference": 0.196121,
+      "pixelsAbove8": 54120,
+      "pixelsAbove20": 30839,
+      "pixelsAbove40": 10573
+    },
+    {
+      "frame": 154,
+      "time": 6.416667,
+      "energy": 1710791.0,
+      "changePercent": 1.60521,
+      "meanAbsoluteDifference": 0.147049,
+      "pixelsAbove8": 54544,
+      "pixelsAbove20": 31220,
+      "pixelsAbove40": 10875
+    },
+    {
+      "frame": 155,
+      "time": 6.458333,
+      "energy": 1751360.0,
+      "changePercent": 2.37136,
+      "meanAbsoluteDifference": 0.191783,
+      "pixelsAbove8": 55240,
+      "pixelsAbove20": 31822,
+      "pixelsAbove40": 11326
+    },
+    {
+      "frame": 156,
+      "time": 6.5,
+      "energy": 1778424.0,
+      "changePercent": 1.54531,
+      "meanAbsoluteDifference": 0.146686,
+      "pixelsAbove8": 55676,
+      "pixelsAbove20": 32214,
+      "pixelsAbove40": 11624
+    },
+    {
+      "frame": 157,
+      "time": 6.541667,
+      "energy": 1805691.0,
+      "changePercent": 1.53321,
+      "meanAbsoluteDifference": 0.148038,
+      "pixelsAbove8": 56115,
+      "pixelsAbove20": 32598,
+      "pixelsAbove40": 11930
+    },
+    {
+      "frame": 158,
+      "time": 6.583333,
+      "energy": 1846140.0,
+      "changePercent": 2.24008,
+      "meanAbsoluteDifference": 0.19147,
+      "pixelsAbove8": 56753,
+      "pixelsAbove20": 33179,
+      "pixelsAbove40": 12400
+    },
+    {
+      "frame": 159,
+      "time": 6.625,
+      "energy": 1873779.0,
+      "changePercent": 1.49712,
+      "meanAbsoluteDifference": 0.145963,
+      "pixelsAbove8": 57178,
+      "pixelsAbove20": 33561,
+      "pixelsAbove40": 12703
+    },
+    {
+      "frame": 160,
+      "time": 6.666667,
+      "energy": 1657256.0,
+      "changePercent": -11.55542,
+      "meanAbsoluteDifference": 1.162663,
+      "pixelsAbove8": 55786,
+      "pixelsAbove20": 30802,
+      "pixelsAbove40": 9469
+    },
+    {
+      "frame": 161,
+      "time": 6.708333,
+      "energy": 1700741.0,
+      "changePercent": 2.62392,
+      "meanAbsoluteDifference": 0.221426,
+      "pixelsAbove8": 56459,
+      "pixelsAbove20": 31387,
+      "pixelsAbove40": 9973
+    },
+    {
+      "frame": 162,
+      "time": 6.75,
+      "energy": 1727859.0,
+      "changePercent": 1.59448,
+      "meanAbsoluteDifference": 0.147468,
+      "pixelsAbove8": 56929,
+      "pixelsAbove20": 31775,
+      "pixelsAbove40": 10266
+    },
+    {
+      "frame": 163,
+      "time": 6.791667,
+      "energy": 1769576.0,
+      "changePercent": 2.41438,
+      "meanAbsoluteDifference": 0.192288,
+      "pixelsAbove8": 57558,
+      "pixelsAbove20": 32392,
+      "pixelsAbove40": 10750
+    },
+    {
+      "frame": 164,
+      "time": 6.833333,
+      "energy": 1797404.0,
+      "changePercent": 1.57258,
+      "meanAbsoluteDifference": 0.148777,
+      "pixelsAbove8": 58032,
+      "pixelsAbove20": 32802,
+      "pixelsAbove40": 11061
+    },
+    {
+      "frame": 165,
+      "time": 6.875,
+      "energy": 1838821.0,
+      "changePercent": 2.30427,
+      "meanAbsoluteDifference": 0.195155,
+      "pixelsAbove8": 58699,
+      "pixelsAbove20": 33405,
+      "pixelsAbove40": 11560
+    },
+    {
+      "frame": 166,
+      "time": 6.916667,
+      "energy": 1866223.0,
+      "changePercent": 1.49019,
+      "meanAbsoluteDifference": 0.147956,
+      "pixelsAbove8": 59127,
+      "pixelsAbove20": 33818,
+      "pixelsAbove40": 11868
+    },
+    {
+      "frame": 167,
+      "time": 6.958333,
+      "energy": 1894169.0,
+      "changePercent": 1.49746,
+      "meanAbsoluteDifference": 0.14792,
+      "pixelsAbove8": 59579,
+      "pixelsAbove20": 34213,
+      "pixelsAbove40": 12214
+    },
+    {
+      "frame": 168,
+      "time": 7.0,
+      "energy": 1935897.0,
+      "changePercent": 2.20297,
+      "meanAbsoluteDifference": 0.19437,
+      "pixelsAbove8": 60243,
+      "pixelsAbove20": 34822,
+      "pixelsAbove40": 12694
+    },
+    {
+      "frame": 169,
+      "time": 7.041667,
+      "energy": 1963785.0,
+      "changePercent": 1.44057,
+      "meanAbsoluteDifference": 0.151818,
+      "pixelsAbove8": 60664,
+      "pixelsAbove20": 35225,
+      "pixelsAbove40": 13034
+    },
+    {
+      "frame": 170,
+      "time": 7.083333,
+      "energy": 1701672.0,
+      "changePercent": -13.34734,
+      "meanAbsoluteDifference": 1.192173,
+      "pixelsAbove8": 58266,
+      "pixelsAbove20": 31388,
+      "pixelsAbove40": 9381
+    },
+    {
+      "frame": 171,
+      "time": 7.125,
+      "energy": 1727815.0,
+      "changePercent": 1.53631,
+      "meanAbsoluteDifference": 0.17407,
+      "pixelsAbove8": 58638,
+      "pixelsAbove20": 31759,
+      "pixelsAbove40": 9705
+    },
+    {
+      "frame": 172,
+      "time": 7.166667,
+      "energy": 1769767.0,
+      "changePercent": 2.42804,
+      "meanAbsoluteDifference": 0.198973,
+      "pixelsAbove8": 59294,
+      "pixelsAbove20": 32365,
+      "pixelsAbove40": 10208
+    },
+    {
+      "frame": 173,
+      "time": 7.208333,
+      "energy": 1797469.0,
+      "changePercent": 1.56529,
+      "meanAbsoluteDifference": 0.151021,
+      "pixelsAbove8": 59722,
+      "pixelsAbove20": 32817,
+      "pixelsAbove40": 10516
+    },
+    {
+      "frame": 174,
+      "time": 7.25,
+      "energy": 1838834.0,
+      "changePercent": 2.30129,
+      "meanAbsoluteDifference": 0.198406,
+      "pixelsAbove8": 60385,
+      "pixelsAbove20": 33416,
+      "pixelsAbove40": 11025
+    },
+    {
+      "frame": 175,
+      "time": 7.291667,
+      "energy": 1866295.0,
+      "changePercent": 1.49339,
+      "meanAbsoluteDifference": 0.147533,
+      "pixelsAbove8": 60805,
+      "pixelsAbove20": 33819,
+      "pixelsAbove40": 11328
+    },
+    {
+      "frame": 176,
+      "time": 7.333333,
+      "energy": 1907470.0,
+      "changePercent": 2.20624,
+      "meanAbsoluteDifference": 0.193159,
+      "pixelsAbove8": 61430,
+      "pixelsAbove20": 34402,
+      "pixelsAbove40": 11835
+    },
+    {
+      "frame": 177,
+      "time": 7.375,
+      "energy": 1935052.0,
+      "changePercent": 1.446,
+      "meanAbsoluteDifference": 0.148171,
+      "pixelsAbove8": 61867,
+      "pixelsAbove20": 34785,
+      "pixelsAbove40": 12165
+    },
+    {
+      "frame": 178,
+      "time": 7.416667,
+      "energy": 1976022.0,
+      "changePercent": 2.11726,
+      "meanAbsoluteDifference": 0.194187,
+      "pixelsAbove8": 62493,
+      "pixelsAbove20": 35374,
+      "pixelsAbove40": 12648
+    },
+    {
+      "frame": 179,
+      "time": 7.458333,
+      "energy": 1990329.0,
+      "changePercent": 0.72403,
+      "meanAbsoluteDifference": 0.274938,
+      "pixelsAbove8": 62637,
+      "pixelsAbove20": 35286,
+      "pixelsAbove40": 12821
+    },
+    {
+      "frame": 180,
+      "time": 7.5,
+      "energy": 2016758.0,
+      "changePercent": 1.32787,
+      "meanAbsoluteDifference": 0.174096,
+      "pixelsAbove8": 62966,
+      "pixelsAbove20": 35639,
+      "pixelsAbove40": 13131
+    },
+    {
+      "frame": 181,
+      "time": 7.541667,
+      "energy": 1764056.0,
+      "changePercent": -12.53011,
+      "meanAbsoluteDifference": 1.13391,
+      "pixelsAbove8": 60842,
+      "pixelsAbove20": 32251,
+      "pixelsAbove40": 9482
+    },
+    {
+      "frame": 182,
+      "time": 7.583333,
+      "energy": 1789498.0,
+      "changePercent": 1.44224,
+      "meanAbsoluteDifference": 0.170308,
+      "pixelsAbove8": 61235,
+      "pixelsAbove20": 32610,
+      "pixelsAbove40": 9787
+    },
+    {
+      "frame": 183,
+      "time": 7.625,
+      "energy": 1830368.0,
+      "changePercent": 2.28388,
+      "meanAbsoluteDifference": 0.196023,
+      "pixelsAbove8": 61867,
+      "pixelsAbove20": 33211,
+      "pixelsAbove40": 10288
+    },
+    {
+      "frame": 184,
+      "time": 7.666667,
+      "energy": 1856996.0,
+      "changePercent": 1.45479,
+      "meanAbsoluteDifference": 0.146742,
+      "pixelsAbove8": 62267,
+      "pixelsAbove20": 33609,
+      "pixelsAbove40": 10611
+    },
+    {
+      "frame": 185,
+      "time": 7.708333,
+      "energy": 1897870.0,
+      "changePercent": 2.20108,
+      "meanAbsoluteDifference": 0.192241,
+      "pixelsAbove8": 62892,
+      "pixelsAbove20": 34177,
+      "pixelsAbove40": 11066
+    },
+    {
+      "frame": 186,
+      "time": 7.75,
+      "energy": 1924749.0,
+      "changePercent": 1.41627,
+      "meanAbsoluteDifference": 0.147368,
+      "pixelsAbove8": 63277,
+      "pixelsAbove20": 34565,
+      "pixelsAbove40": 11379
+    },
+    {
+      "frame": 187,
+      "time": 7.791667,
+      "energy": 1964958.0,
+      "changePercent": 2.08905,
+      "meanAbsoluteDifference": 0.19028,
+      "pixelsAbove8": 63894,
+      "pixelsAbove20": 35140,
+      "pixelsAbove40": 11869
+    },
+    {
+      "frame": 188,
+      "time": 7.833333,
+      "energy": 1991697.0,
+      "changePercent": 1.36079,
+      "meanAbsoluteDifference": 0.144835,
+      "pixelsAbove8": 64283,
+      "pixelsAbove20": 35515,
+      "pixelsAbove40": 12162
+    },
+    {
+      "frame": 189,
+      "time": 7.875,
+      "energy": 2031678.0,
+      "changePercent": 2.00738,
+      "meanAbsoluteDifference": 0.18819,
+      "pixelsAbove8": 64882,
+      "pixelsAbove20": 36090,
+      "pixelsAbove40": 12621
+    },
+    {
+      "frame": 190,
+      "time": 7.916667,
+      "energy": 2058295.0,
+      "changePercent": 1.3101,
+      "meanAbsoluteDifference": 0.144141,
+      "pixelsAbove8": 65306,
+      "pixelsAbove20": 36460,
+      "pixelsAbove40": 12923
+    },
+    {
+      "frame": 191,
+      "time": 7.958333,
+      "energy": 2084674.0,
+      "changePercent": 1.28159,
+      "meanAbsoluteDifference": 0.144805,
+      "pixelsAbove8": 65675,
+      "pixelsAbove20": 36816,
+      "pixelsAbove40": 13246
+    },
+    {
+      "frame": 192,
+      "time": 8.0,
+      "energy": 1806892.0,
+      "changePercent": -13.32496,
+      "meanAbsoluteDifference": 1.223723,
+      "pixelsAbove8": 62628,
+      "pixelsAbove20": 32705,
+      "pixelsAbove40": 9538
+    },
+    {
+      "frame": 193,
+      "time": 8.041667,
+      "energy": 1831216.0,
+      "changePercent": 1.34618,
+      "meanAbsoluteDifference": 0.165321,
+      "pixelsAbove8": 62995,
+      "pixelsAbove20": 33000,
+      "pixelsAbove40": 9824
+    },
+    {
+      "frame": 194,
+      "time": 8.083333,
+      "energy": 1870658.0,
+      "changePercent": 2.15387,
+      "meanAbsoluteDifference": 0.191588,
+      "pixelsAbove8": 63580,
+      "pixelsAbove20": 33555,
+      "pixelsAbove40": 10297
+    },
+    {
+      "frame": 195,
+      "time": 8.125,
+      "energy": 1897261.0,
+      "changePercent": 1.42212,
+      "meanAbsoluteDifference": 0.143556,
+      "pixelsAbove8": 63955,
+      "pixelsAbove20": 33954,
+      "pixelsAbove40": 10614
+    },
+    {
+      "frame": 196,
+      "time": 8.166667,
+      "energy": 1936713.0,
+      "changePercent": 2.07942,
+      "meanAbsoluteDifference": 0.19064,
+      "pixelsAbove8": 64537,
+      "pixelsAbove20": 34528,
+      "pixelsAbove40": 11068
+    },
+    {
+      "frame": 197,
+      "time": 8.208333,
+      "energy": 1963085.0,
+      "changePercent": 1.36169,
+      "meanAbsoluteDifference": 0.14464,
+      "pixelsAbove8": 64948,
+      "pixelsAbove20": 34893,
+      "pixelsAbove40": 11372
+    },
+    {
+      "frame": 198,
+      "time": 8.25,
+      "energy": 2002894.0,
+      "changePercent": 2.02788,
+      "meanAbsoluteDifference": 0.187658,
+      "pixelsAbove8": 65531,
+      "pixelsAbove20": 35456,
+      "pixelsAbove40": 11841
+    },
+    {
+      "frame": 199,
+      "time": 8.291667,
+      "energy": 2030677.0,
+      "changePercent": 1.38714,
+      "meanAbsoluteDifference": 0.149104,
+      "pixelsAbove8": 65942,
+      "pixelsAbove20": 35820,
+      "pixelsAbove40": 12152
+    },
+    {
+      "frame": 200,
+      "time": 8.333333,
+      "energy": 2071445.0,
+      "changePercent": 2.00761,
+      "meanAbsoluteDifference": 0.192439,
+      "pixelsAbove8": 66565,
+      "pixelsAbove20": 36401,
+      "pixelsAbove40": 12625
+    },
+    {
+      "frame": 201,
+      "time": 8.375,
+      "energy": 2098484.0,
+      "changePercent": 1.30532,
+      "meanAbsoluteDifference": 0.147238,
+      "pixelsAbove8": 66956,
+      "pixelsAbove20": 36792,
+      "pixelsAbove40": 12910
+    },
+    {
+      "frame": 202,
+      "time": 8.416667,
+      "energy": 2139891.0,
+      "changePercent": 1.97319,
+      "meanAbsoluteDifference": 0.196691,
+      "pixelsAbove8": 67574,
+      "pixelsAbove20": 37377,
+      "pixelsAbove40": 13388
+    },
+    {
+      "frame": 203,
+      "time": 8.458333,
+      "energy": 1843721.0,
+      "changePercent": -13.84042,
+      "meanAbsoluteDifference": 1.24024,
+      "pixelsAbove8": 64080,
+      "pixelsAbove20": 32853,
+      "pixelsAbove40": 9621
+    },
+    {
+      "frame": 204,
+      "time": 8.5,
+      "energy": 1869104.0,
+      "changePercent": 1.37673,
+      "meanAbsoluteDifference": 0.176355,
+      "pixelsAbove8": 64456,
+      "pixelsAbove20": 33206,
+      "pixelsAbove40": 9926
+    },
+    {
+      "frame": 205,
+      "time": 8.541667,
+      "energy": 1911414.0,
+      "changePercent": 2.26365,
+      "meanAbsoluteDifference": 0.201949,
+      "pixelsAbove8": 65117,
+      "pixelsAbove20": 33808,
+      "pixelsAbove40": 10403
+    },
+    {
+      "frame": 206,
+      "time": 8.583333,
+      "energy": 1940002.0,
+      "changePercent": 1.49565,
+      "meanAbsoluteDifference": 0.153625,
+      "pixelsAbove8": 65526,
+      "pixelsAbove20": 34231,
+      "pixelsAbove40": 10735
+    },
+    {
+      "frame": 207,
+      "time": 8.625,
+      "energy": 1982946.0,
+      "changePercent": 2.21361,
+      "meanAbsoluteDifference": 0.201043,
+      "pixelsAbove8": 66192,
+      "pixelsAbove20": 34870,
+      "pixelsAbove40": 11237
+    },
+    {
+      "frame": 208,
+      "time": 8.666667,
+      "energy": 2011412.0,
+      "changePercent": 1.43554,
+      "meanAbsoluteDifference": 0.155645,
+      "pixelsAbove8": 66627,
+      "pixelsAbove20": 35290,
+      "pixelsAbove40": 11545
+    },
+    {
+      "frame": 209,
+      "time": 8.708333,
+      "energy": 2039224.0,
+      "changePercent": 1.38271,
+      "meanAbsoluteDifference": 0.358353,
+      "pixelsAbove8": 66863,
+      "pixelsAbove20": 35360,
+      "pixelsAbove40": 11919
+    },
+    {
+      "frame": 210,
+      "time": 8.75,
+      "energy": 2065773.0,
+      "changePercent": 1.30192,
+      "meanAbsoluteDifference": 0.191529,
+      "pixelsAbove8": 67223,
+      "pixelsAbove20": 35753,
+      "pixelsAbove40": 12237
+    },
+    {
+      "frame": 211,
+      "time": 8.791667,
+      "energy": 2108697.0,
+      "changePercent": 2.07787,
+      "meanAbsoluteDifference": 0.21472,
+      "pixelsAbove8": 67855,
+      "pixelsAbove20": 36357,
+      "pixelsAbove40": 12719
+    },
+    {
+      "frame": 212,
+      "time": 8.833333,
+      "energy": 2137128.0,
+      "changePercent": 1.34827,
+      "meanAbsoluteDifference": 0.163679,
+      "pixelsAbove8": 68292,
+      "pixelsAbove20": 36785,
+      "pixelsAbove40": 13061
+    },
+    {
+      "frame": 213,
+      "time": 8.875,
+      "energy": 2180257.0,
+      "changePercent": 2.01808,
+      "meanAbsoluteDifference": 0.208888,
+      "pixelsAbove8": 68957,
+      "pixelsAbove20": 37392,
+      "pixelsAbove40": 13559
+    },
+    {
+      "frame": 214,
+      "time": 8.916667,
+      "energy": 1896275.0,
+      "changePercent": -13.02516,
+      "meanAbsoluteDifference": 1.190549,
+      "pixelsAbove8": 65822,
+      "pixelsAbove20": 33498,
+      "pixelsAbove40": 9773
+    },
+    {
+      "frame": 215,
+      "time": 8.958333,
+      "energy": 1936130.0,
+      "changePercent": 2.10175,
+      "meanAbsoluteDifference": 0.227677,
+      "pixelsAbove8": 66424,
+      "pixelsAbove20": 34070,
+      "pixelsAbove40": 10261
+    },
+    {
+      "frame": 216,
+      "time": 9.0,
+      "energy": 1964198.0,
+      "changePercent": 1.4497,
+      "meanAbsoluteDifference": 0.157404,
+      "pixelsAbove8": 66865,
+      "pixelsAbove20": 34471,
+      "pixelsAbove40": 10578
+    },
+    {
+      "frame": 217,
+      "time": 9.041667,
+      "energy": 1992628.0,
+      "changePercent": 1.44741,
+      "meanAbsoluteDifference": 0.155057,
+      "pixelsAbove8": 67324,
+      "pixelsAbove20": 34873,
+      "pixelsAbove40": 10904
+    },
+    {
+      "frame": 218,
+      "time": 9.083333,
+      "energy": 2035057.0,
+      "changePercent": 2.1293,
+      "meanAbsoluteDifference": 0.202085,
+      "pixelsAbove8": 67973,
+      "pixelsAbove20": 35475,
+      "pixelsAbove40": 11409
+    },
+    {
+      "frame": 219,
+      "time": 9.125,
+      "energy": 2063219.0,
+      "changePercent": 1.38384,
+      "meanAbsoluteDifference": 0.156843,
+      "pixelsAbove8": 68410,
+      "pixelsAbove20": 35888,
+      "pixelsAbove40": 11744
+    },
+    {
+      "frame": 220,
+      "time": 9.166667,
+      "energy": 2105191.0,
+      "changePercent": 2.0343,
+      "meanAbsoluteDifference": 0.200715,
+      "pixelsAbove8": 69036,
+      "pixelsAbove20": 36466,
+      "pixelsAbove40": 12268
+    },
+    {
+      "frame": 221,
+      "time": 9.208333,
+      "energy": 2133036.0,
+      "changePercent": 1.32268,
+      "meanAbsoluteDifference": 0.157679,
+      "pixelsAbove8": 69474,
+      "pixelsAbove20": 36883,
+      "pixelsAbove40": 12610
+    },
+    {
+      "frame": 222,
+      "time": 9.25,
+      "energy": 2174707.0,
+      "changePercent": 1.9536,
+      "meanAbsoluteDifference": 0.197886,
+      "pixelsAbove8": 70152,
+      "pixelsAbove20": 37504,
+      "pixelsAbove40": 13097
+    },
+    {
+      "frame": 223,
+      "time": 9.291667,
+      "energy": 2202136.0,
+      "changePercent": 1.26127,
+      "meanAbsoluteDifference": 0.150965,
+      "pixelsAbove8": 70570,
+      "pixelsAbove20": 37876,
+      "pixelsAbove40": 13434
+    },
+    {
+      "frame": 224,
+      "time": 9.333333,
+      "energy": 1922835.0,
+      "changePercent": -12.68319,
+      "meanAbsoluteDifference": 1.344301,
+      "pixelsAbove8": 66939,
+      "pixelsAbove20": 33651,
+      "pixelsAbove40": 9920
+    },
+    {
+      "frame": 225,
+      "time": 9.375,
+      "energy": 1959935.0,
+      "changePercent": 1.92944,
+      "meanAbsoluteDifference": 0.21508,
+      "pixelsAbove8": 67461,
+      "pixelsAbove20": 34178,
+      "pixelsAbove40": 10408
+    },
+    {
+      "frame": 226,
+      "time": 9.416667,
+      "energy": 1985920.0,
+      "changePercent": 1.32581,
+      "meanAbsoluteDifference": 0.147371,
+      "pixelsAbove8": 67826,
+      "pixelsAbove20": 34553,
+      "pixelsAbove40": 10697
+    },
+    {
+      "frame": 227,
+      "time": 9.458333,
+      "energy": 2025305.0,
+      "changePercent": 1.98321,
+      "meanAbsoluteDifference": 0.189548,
+      "pixelsAbove8": 68443,
+      "pixelsAbove20": 35145,
+      "pixelsAbove40": 11176
+    },
+    {
+      "frame": 228,
+      "time": 9.5,
+      "energy": 2051542.0,
+      "changePercent": 1.29546,
+      "meanAbsoluteDifference": 0.143981,
+      "pixelsAbove8": 68864,
+      "pixelsAbove20": 35531,
+      "pixelsAbove40": 11475
+    },
+    {
+      "frame": 229,
+      "time": 9.541667,
+      "energy": 2077591.0,
+      "changePercent": 1.26973,
+      "meanAbsoluteDifference": 0.145694,
+      "pixelsAbove8": 69246,
+      "pixelsAbove20": 35915,
+      "pixelsAbove40": 11797
+    },
+    {
+      "frame": 230,
+      "time": 9.583333,
+      "energy": 2117165.0,
+      "changePercent": 1.9048,
+      "meanAbsoluteDifference": 0.18788,
+      "pixelsAbove8": 69869,
+      "pixelsAbove20": 36485,
+      "pixelsAbove40": 12250
+    },
+    {
+      "frame": 231,
+      "time": 9.625,
+      "energy": 2143958.0,
+      "changePercent": 1.26551,
+      "meanAbsoluteDifference": 0.144773,
+      "pixelsAbove8": 70297,
+      "pixelsAbove20": 36883,
+      "pixelsAbove40": 12573
+    },
+    {
+      "frame": 232,
+      "time": 9.666667,
+      "energy": 2183578.0,
+      "changePercent": 1.84798,
+      "meanAbsoluteDifference": 0.188237,
+      "pixelsAbove8": 70928,
+      "pixelsAbove20": 37445,
+      "pixelsAbove40": 13035
+    },
+    {
+      "frame": 233,
+      "time": 9.708333,
+      "energy": 2210492.0,
+      "changePercent": 1.23256,
+      "meanAbsoluteDifference": 0.148567,
+      "pixelsAbove8": 71332,
+      "pixelsAbove20": 37853,
+      "pixelsAbove40": 13371
+    },
+    {
+      "frame": 234,
+      "time": 9.75,
+      "energy": 2251252.0,
+      "changePercent": 1.84393,
+      "meanAbsoluteDifference": 0.193634,
+      "pixelsAbove8": 71963,
+      "pixelsAbove20": 38449,
+      "pixelsAbove40": 13847
+    },
+    {
+      "frame": 235,
+      "time": 9.791667,
+      "energy": 1929455.0,
+      "changePercent": -14.29413,
+      "meanAbsoluteDifference": 1.263396,
+      "pixelsAbove8": 67442,
+      "pixelsAbove20": 33675,
+      "pixelsAbove40": 9919
+    },
+    {
+      "frame": 236,
+      "time": 9.833333,
+      "energy": 1929173.0,
+      "changePercent": -0.01462,
+      "meanAbsoluteDifference": 0.273093,
+      "pixelsAbove8": 67682,
+      "pixelsAbove20": 33664,
+      "pixelsAbove40": 9950
+    },
+    {
+      "frame": 237,
+      "time": 9.875,
+      "energy": 1792759.0,
+      "changePercent": -7.07111,
+      "meanAbsoluteDifference": 0.562346,
+      "pixelsAbove8": 66584,
+      "pixelsAbove20": 30064,
+      "pixelsAbove40": 8045
+    },
+    {
+      "frame": 238,
+      "time": 9.916667,
+      "energy": 1593895.0,
+      "changePercent": -11.09262,
+      "meanAbsoluteDifference": 0.883048,
+      "pixelsAbove8": 64366,
+      "pixelsAbove20": 24079,
+      "pixelsAbove40": 5343
+    },
+    {
+      "frame": 239,
+      "time": 9.958333,
+      "energy": 1547327.0,
+      "changePercent": -2.92165,
+      "meanAbsoluteDifference": 0.298312,
+      "pixelsAbove8": 64007,
+      "pixelsAbove20": 22983,
+      "pixelsAbove40": 4384
+    },
+    {
+      "frame": 240,
+      "time": 10.0,
+      "energy": 1431470.0,
+      "changePercent": -7.48756,
+      "meanAbsoluteDifference": 0.565969,
+      "pixelsAbove8": 62916,
+      "pixelsAbove20": 18791,
+      "pixelsAbove40": 2459
+    },
+    {
+      "frame": 241,
+      "time": 10.041667,
+      "energy": 1372664.0,
+      "changePercent": -4.10808,
+      "meanAbsoluteDifference": 0.328338,
+      "pixelsAbove8": 62230,
+      "pixelsAbove20": 16767,
+      "pixelsAbove40": 1653
+    },
+    {
+      "frame": 242,
+      "time": 10.083333,
+      "energy": 1256765.0,
+      "changePercent": -8.44336,
+      "meanAbsoluteDifference": 0.528404,
+      "pixelsAbove8": 59831,
+      "pixelsAbove20": 12094,
+      "pixelsAbove40": 647
+    },
+    {
+      "frame": 243,
+      "time": 10.125,
+      "energy": 1203963.0,
+      "changePercent": -4.20142,
+      "meanAbsoluteDifference": 0.272458,
+      "pixelsAbove8": 58573,
+      "pixelsAbove20": 10264,
+      "pixelsAbove40": 314
+    },
+    {
+      "frame": 244,
+      "time": 10.166667,
+      "energy": 1097062.0,
+      "changePercent": -8.87909,
+      "meanAbsoluteDifference": 0.474454,
+      "pixelsAbove8": 54916,
+      "pixelsAbove20": 6213,
+      "pixelsAbove40": 109
+    },
+    {
+      "frame": 245,
+      "time": 10.208333,
+      "energy": 1054365.0,
+      "changePercent": -3.89194,
+      "meanAbsoluteDifference": 0.206928,
+      "pixelsAbove8": 53398,
+      "pixelsAbove20": 4622,
+      "pixelsAbove40": 48
+    },
+    {
+      "frame": 246,
+      "time": 10.25,
+      "energy": 960422.0,
+      "changePercent": -8.90991,
+      "meanAbsoluteDifference": 0.420715,
+      "pixelsAbove8": 48636,
+      "pixelsAbove20": 1727,
+      "pixelsAbove40": 18
+    },
+    {
+      "frame": 247,
+      "time": 10.291667,
+      "energy": 907310.0,
+      "changePercent": -5.53007,
+      "meanAbsoluteDifference": 0.268129,
+      "pixelsAbove8": 45531,
+      "pixelsAbove20": 721,
+      "pixelsAbove40": 6
+    },
+    {
+      "frame": 248,
+      "time": 10.333333,
+      "energy": 829250.0,
+      "changePercent": -8.60345,
+      "meanAbsoluteDifference": 0.373565,
+      "pixelsAbove8": 39747,
+      "pixelsAbove20": 159,
+      "pixelsAbove40": 0
+    },
+    {
+      "frame": 249,
+      "time": 10.375,
+      "energy": 798441.0,
+      "changePercent": -3.71528,
+      "meanAbsoluteDifference": 0.165424,
+      "pixelsAbove8": 37186,
+      "pixelsAbove20": 89,
+      "pixelsAbove40": 0
+    },
+    {
+      "frame": 250,
+      "time": 10.416667,
+      "energy": 546241.0,
+      "changePercent": -31.58655,
+      "meanAbsoluteDifference": 1.056811,
+      "pixelsAbove8": 12963,
+      "pixelsAbove20": 7,
+      "pixelsAbove40": 0
+    },
+    {
+      "frame": 251,
+      "time": 10.458333,
+      "energy": 545989.0,
+      "changePercent": -0.04613,
+      "meanAbsoluteDifference": 0.011563,
+      "pixelsAbove8": 12899,
+      "pixelsAbove20": 5,
+      "pixelsAbove40": 0
+    },
+    {
+      "frame": 252,
+      "time": 10.5,
+      "energy": 544518.0,
+      "changePercent": -0.26942,
+      "meanAbsoluteDifference": 0.010544,
+      "pixelsAbove8": 12760,
+      "pixelsAbove20": 1,
+      "pixelsAbove40": 0
+    },
+    {
+      "frame": 253,
+      "time": 10.541667,
+      "energy": 503683.0,
+      "changePercent": -7.49929,
+      "meanAbsoluteDifference": 0.177598,
+      "pixelsAbove8": 8557,
+      "pixelsAbove20": 0,
+      "pixelsAbove40": 0
+    },
+    {
+      "frame": 254,
+      "time": 10.583333,
+      "energy": 470963.0,
+      "changePercent": -6.49615,
+      "meanAbsoluteDifference": 0.146358,
+      "pixelsAbove8": 5957,
+      "pixelsAbove20": 0,
+      "pixelsAbove40": 0
+    },
+    {
+      "frame": 255,
+      "time": 10.625,
+      "energy": 245516.0,
+      "changePercent": -47.86937,
+      "meanAbsoluteDifference": 0.877518,
+      "pixelsAbove8": 490,
+      "pixelsAbove20": 0,
+      "pixelsAbove40": 0
+    }
+  ]
+}

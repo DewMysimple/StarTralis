@@ -44,14 +44,14 @@
   <h2>对应实现参数</h2>
   <div class="table-wrap"><table><thead><tr><th>项目</th><th>实现</th></tr></thead><tbody>
     <tr><td>构图</td><td>桌面圆心 (50%, 67%)；手机 (50%, 65%)；标题中心约 49% / 48%。</td></tr>
-    <tr><td>粒子</td><td>桌面 480 / 低性能 360；手机 280 / 低性能 240；减少动态偏好 180。</td></tr>
+    <tr><td>粒子</td><td>桌面 360 / 低性能 280；手机 240 / 低性能 200；减少动态偏好 160。</td></tr>
     <tr><td>轨道</td><td>屏幕位置随机采样转换为极坐标；最小半径 44 CSS px；半径覆盖四角。</td></tr>
     <tr><td>角速度</td><td>0.12–0.37 rad/s，统一主方向、独立随机速度；使用秒级 deltaTime 积分。</td></tr>
     <tr><td>启动</td><td>约 0.34 s 平滑加速；0–2.7 s 分批激活。</td></tr>
     <tr><td>历史</td><td>每颗星 384 个固定槽，约 30 Hz 采样；寿命 3.2–10.2 s。</td></tr>
-    <tr><td>光迹</td><td>离屏透明画布持续叠加真实运动弧段，destination-out 指数擦除；每 0.45 s 从有限历史校正，清除低透明度量化残留。</td></tr>
+    <tr><td>光迹</td><td>每帧统一从有限真实历史生成连续圆弧，按样本年龄指数衰减并柔化寿命边缘，连接到实时星头；已移除周期性重建，详见<a href="flicker-analysis.html">第二轮闪烁分析</a>。</td></tr>
     <tr><td>星头</td><td>显示层单独合成小光点；辉光纹理只创建一次，少量亮星采用 lighter 混合。</td></tr>
-    <tr><td>释放</td><td>立即停止位移与新段生成；指数擦除与平滑透明度共同消散；1.05 s 后清理完全透明的缓冲区并停止 RAF。</td></tr>
+    <tr><td>释放</td><td>立即冻结完整动态画面，只用单条平滑透明度曲线淡出；1.05 s 后清理缓冲区并停止 RAF；释放期间运动时间暂停。</td></tr>
     <tr><td>输入</td><td>Pointer Events、pointer capture、cancel、lost capture、blur、visibilitychange；Space / Enter，多输入源合并。</td></tr>
     <tr><td>性能</td><td>DPR 上限桌面 2、手机 1.75、低性能 1.25，并限制像素预算；静态背景不逐帧重绘；无逐帧 React State 更新。</td></tr>
   </tbody></table></div>

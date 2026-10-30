@@ -1,0 +1,51 @@
+Astral Flow 第二轮验收记录
+日期：2026-10-31（Asia/Shanghai）；任务起于 2026-10-30。
+验证对象：main@1b1db04 加本轮本地修改；本轮交付 revision 从 Git 日志定位。
+
+实际构建：npm run build 成功。TypeScript 严格检查与 Vite 生产包通过。
+实际完整测试：npm test，16 passed，83.7 秒。
+unexpected=0，flaky=0，skipped=0。
+机器测试结果：browser-tests.json。不是沿用初版十项测试的通过记录。
+
+原始录屏：2550×1314，24 FPS，256 帧；全部解码，8 张总览视觉复核。
+F169→F170 下降 13.347%，骤降中位间隔 0.458333 秒。
+同一次旧重建调用前后直接量测约 15%–19% 能量下降，确认两套模型不等价。
+原视频及四张图片已保留 source/diagnostics，原片复制 SHA256 已核对相同。
+
+固定 960×600、DPR=1、60 Hz，连续采样 46 秒共 2760 帧：
+3–8 秒：旧版最大下降 16.914%，新版约 0.471%，超过 5% 骤降 11→0 次。
+12–20 秒：旧版约 15.989%，新版约 0.496%，18→0 次。
+36–46 秒：旧版约 15.771%，新版约 0.456%，22→0 次。
+覆盖全部窗口、0.45 秒名义倍数和旧版实际重建时刻，避免 RAF 舍入相位漂移漏检。
+after-trace.json 每帧保存时间、亮度、Alpha、绘制及读回耗时；读回不计入绘制时间。
+high-dpr-stability.json：设备 DPR=3、绘图 DPR=1.75、144 Hz，最大下降约 0.346%。
+
+释放冻结完整画面，只使用单一 1.05 秒曲线；背景、标题、圆环保留。
+六次快速续按的首帧变化绝对值最大约 2.345%，最终完全释放 Alpha=0。
+分数 DPR 的冻结像素测试：CSS 尺寸重采样误差 25.389%→0.000%。
+复制与淡出均已改为 backing-store 像素一比一，避免薄轨迹变形。
+旧有鼠标捕获/取消、失焦/隐藏、触摸、键盘组合、四种尺寸、缩放、reduced-motion 均通过。
+时钟敏感测试在 mount 后 pauseAt，用 runFor 精确推进，排除 IPC/读回自行耗时。
+
+真实时间独立测量：1440×900、DPR=1、原生 RAF，持续约 46 秒。
+3–46 秒稳态约 178.5 次 RAF/s，回调 P95 3.60 ms。
+36–46 秒回调 P95 3.70 ms；8/20/46 秒均保持 360 条轨迹。
+无逐帧像素读回或视频编码；摘要排除三次截图前后 0.25 秒，原始帧完整保存。
+释放后 state=idle、alpha=0、errors=[]。这是本机无头 Chromium 156，宿主约 180 Hz；
+不代表物理 60 Hz 屏幕、完整 GPU 呈现或其他设备性能。
+
+演示录制另作核对：默认 JPEG90/有损 VP9 在弱星轨上带来额外量化波动。
+同次压缩录制最大下降 5.976%，直接 Canvas 采样仅 0.726%。
+因此演示改为真实合成器 PNG 帧，按原始时间戳在录制结束后编码 VP9 lossless RGB。
+最终演示全部 235 帧已解码，3–8 秒最大下降 0.010%，
+超过 5% 下降 0 次。录制开销与独立性能测量分开。
+分支、源码或帧率变化后必须重新验证，不用视频编码波动推断渲染器问题。
+
+生产包：独立 Vite preview 5181，1440×900/DPR1 与 390×844/DPR3，
+按压进入 pressing，释放回 idle、Alpha=0，页面无错误；production-smoke.json。
+实物手机、Safari、Firefox、云端部署仍未验收。
+
+打开：http://127.0.0.1:5180/docs/flicker-analysis.html
+重现：README.md / package.json 的 analyze:flicker、measure:stability、
+benchmark:stability、capture:preview、report:stability；PNG 录制需要完整 FFmpeg。
+初版原始验收说明：../iteration-01-verification.txt（由 Git 1b1db04 保留）。

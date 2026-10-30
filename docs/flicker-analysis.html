@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Astral Flow · 周期闪烁逐帧分析与修复</title>
+  <style>
+    :root{color-scheme:dark;font:15px/1.8 system-ui,sans-serif;background:#0b1019;color:#c8d1df}*{box-sizing:border-box}body{margin:0}main{max-width:1180px;margin:auto;padding:48px 24px 80px}h1,h2{color:#eef2f8;font-weight:550;line-height:1.4}h1{font-size:30px;margin:10px 0 24px}h2{font-size:22px;margin-top:52px}a{color:#88bee5}p{max-width:100ch}code{color:#b6cedf;font-size:.92em}video,img,canvas{max-width:100%;display:block;border-radius:6px}video{width:100%;background:#05070d}.note{border-left:3px solid #487d9a;padding:12px 18px;background:#111b29;margin:24px 0}.muted{color:#8e9daf;font-size:13px}.controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:16px 0}button,input{font:inherit;color:inherit;background:#182434;border:1px solid #36465b;border-radius:5px;padding:6px 10px}button{cursor:pointer}input[type=range]{flex:1;min-width:180px;padding:0}input[type=number]{width:92px}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:10px 12px;border-bottom:1px solid #253144;text-align:left}th{color:#e2e9f3;font-weight:500}.table-wrap{overflow:auto}.negative{color:#e69e8c}.selected{background:#172b3e}#frame-table tr{cursor:pointer}#input-curve{width:100%;height:220px;background:#101823;cursor:crosshair}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}figure{margin:16px 0}figcaption{font-size:13px;color:#91a0b5;margin-top:6px}summary{cursor:pointer;color:#adc8e0}details{margin:18px 0}footer{margin-top:50px;color:#91a0b5;font-size:13px}@media(max-width:700px){main{padding:28px 16px}.grid{grid-template-columns:1fr}h1{font-size:25px}td,th{padding:8px}}
+  </style>
+</head>
+<body><main>
+  <a href="/">← 打开 Astral Flow</a> · <a href="reference-analysis.html">原参考视频分析</a>
+  <h1>星轨闪烁：逐帧诊断与修复验收</h1>
+  <p>本轮依据 <code>prompt/prompt_02.txt</code>、用户录屏和四张说明图片。对录屏的 <strong>全部 256 帧</strong>进行量测并检查全帧总览；对实际引擎另外连续采样 2,760 帧，覆盖 8、20、46 秒长按。页面记录数据与视觉证据，不把关键帧抽查表述为逐帧人工观看。</p>
+  <div class="note" id="headline">正在加载验收数据…</div>
+  <p class="muted">输入说明图片已原样保留：<a href="../source/diagnostics/review-01.png">说明 1</a>、<a href="../source/diagnostics/review-02.png">验收重点</a>、<a href="../source/diagnostics/review-03.png">原亮度曲线</a>、<a href="../source/diagnostics/review-04.png">原相邻帧对照</a>。</p>
+
+  <h2>真实根因</h2>
+  <p>旧版 <a href="https://github.com/DewMysimple/StarTralis/blob/1b1db046e087dca823cc4ef020f7d75a0f1c9131/src/engine/StarTrailEngine.ts">StarTrailEngine.ts</a> 平时以 <code>source-over</code> 叠加很多小段圆弧、用 <code>destination-out</code> 擦除；每隔 0.45 秒又清空画布，改用历史样本与 conic gradient 整弧绘制。这两套像素累积、重叠和衰减规则不等价。直接包裹旧重建函数，测量同一次调用前后，仍观察到约 15%–19% 的轨迹能量下降，证明问题发生在渲染策略内部。</p>
+  <p>新的每一帧始终由有界的真实角度、时间、曝光历史计算：<code>alpha = recordedExposure × exp(-0.22 × age) × smoothstep((lifetime-age)/0.8)</code>。连续的一条圆弧从有效最旧记录连接到实时角度，再独立绘制星头；没有周期性模型切换。30 Hz 历史采样间的实时末端也参与绘制。过期历史逐步剪除，46 秒后仍是有寿命的开放弧。</p>
+  <p>释放不再叠加多种衰减：冻结当前完整动态画面，按 <code>1-smoothstep(elapsed/1.05)</code> 整体淡出。释放期间暂停运动时间，续按从当前可见强度恢复旧历史和实时端点。桌面粒子从 480 调为 360，降低普通星的亮度、保留少数突出星体；文字、构图、冷白银灰方向及输入方式保持原样。</p>
+
+  <h2>录屏：逐帧步进与完整数据</h2>
+  <p id="input-info" class="muted"></p>
+  <video id="video" controls preload="metadata" aria-label="用户报告闪烁的录屏"></video>
+  <div class="controls"><button id="previous">← 前一帧</button><button id="next">后一帧 →</button><input id="frame-input" type="number" min="0" max="255" value="0" aria-label="帧号"><span id="frame-label"></span><input id="frame-range" type="range" min="0" max="255" value="0" aria-label="选择录屏帧"></div>
+  <canvas id="input-curve" aria-label="256 帧动态亮度曲线，点击跳到对应帧"></canvas>
+  <p class="muted">点击曲线或表格可跳帧；左右方向键逐帧步进。量测采用 850×438 面积缩采样，以首帧作静态基线，排除文字、圆环和录屏光标。它描述画面变化，不是原始按键事件日志。</p>
+  <div class="table-wrap"><table><thead><tr><th>帧</th><th>时间</th><th>动态亮度能量</th><th>相邻帧变化</th></tr></thead><tbody id="frame-table"></tbody></table></div>
+  <div class="grid"><figure><img src="verification/iteration-02/input-frame-169.jpg" alt="F169，7.042秒"><figcaption>F169 · 7.042 s，骤降前</figcaption></figure><figure><img src="verification/iteration-02/input-frame-170.jpg" alt="F170，7.083秒"><figcaption>F170 · 7.083 s，骤降后（约 -13.35%）</figcaption></figure></div>
+  <p><a href="verification/iteration-02/input-frames.json">全部 256 帧量测 JSON</a> · <a href="verification/iteration-02/input-brightness.png">录屏完整亮度曲线</a></p>
+  <details><summary>查看全部 256 帧的八张总览</summary><div id="contacts" class="grid"></div></details>
+
+  <h2>修复前后：连续 46 秒采样</h2>
+  <p>旧引擎固定取自 <code>1b1db04</code>，新引擎为本轮实现。两者都在 <strong>960×600、DPR=1、60 Hz</strong> 下采样，每个渲染帧都记录时间、预乘 Alpha 的亮度能量、Alpha 总量和回调耗时。240×150 的像素读回在绘制计时之后执行；此受控时间实验用于稳定性，不作为真实 FPS 测量。</p>
+  <div class="table-wrap"><table><thead><tr><th>持续按压窗口</th><th>旧版最大单帧下降</th><th>新版最大单帧下降</th><th>旧版 / 新版超过 5% 的下降次数</th></tr></thead><tbody id="comparison"></tbody></table></div>
+  <figure><img src="verification/iteration-02/brightness-comparison.png" alt="完整46秒及3到8秒放大的修复前后亮度曲线"><figcaption>为了比较时间波动，各自以 8 秒的亮度归一化。粒子数与明暗分布经过调优，因此归一化曲线不表示绝对亮度相同；原始能量保存在 JSON。</figcaption></figure>
+  <figure><img src="verification/iteration-02/visual-comparison.png" alt="相同视口下8秒修复前后视觉对照"><figcaption>相同视口、相同运动时间，旧版 480 颗 / 新版 360 颗。新版细弧连续，普通轨迹更暗、少数星体突出。</figcaption></figure>
+  <p><a href="verification/iteration-02/before-trace.json">旧版连续数据与重建前后归因</a> · <a href="verification/iteration-02/after-trace.json">新版连续数据</a> · <a href="verification/iteration-02/summary.json">验收摘要</a></p>
+
+  <h2>释放、续按与长期稳定性</h2>
+  <figure><img src="verification/iteration-02/release-and-resume.png" alt="单曲线冻结淡出与六次快速续按的量测"></figure>
+  <p id="release-summary"></p>
+  <p id="dpr-summary"></p>
+  <p>淡出和续按测试显式暂停测试时钟后逐步推进，避免像素读回、输入 IPC 自身让动画继续前进而污染相邻帧比较。像素拟合同时检查淡出比例和冻结形状；高 DPR 完全释放检查仍覆盖真实 backing-store 边缘。鼠标捕获、取消、失焦、切后台、窗口缩放、触摸、Space/Enter 与 reduced-motion 由浏览器用例覆盖。</p>
+
+  <h2>真实时间 46 秒性能</h2>
+  <p id="performance-summary"></p>
+  <div class="table-wrap"><table><thead><tr><th>真实时间窗口</th><th>原生 RAF 观测速率</th><th>回调耗时 P95</th><th>帧间隔 P95</th></tr></thead><tbody id="performance"></tbody></table></div>
+  <figure><img src="verification/iteration-02/performance.png" alt="46秒原生时间测量的帧间隔与绘制回调耗时"></figure>
+  <div class="grid"><figure><img src="verification/iteration-02/live-hold-8s.png" alt="真实时间按住约8秒"><figcaption>原生时间 · 约 8 秒</figcaption></figure><figure><img src="verification/iteration-02/live-hold-46s.png" alt="真实时间按住约46秒"><figcaption>原生时间 · 约 46 秒</figcaption></figure></div>
+  <p><a href="verification/iteration-02/live-performance.json">全部原生帧时间与环境记录</a>。此为本机 Windows 无头 Chromium 的观测，宿主 RAF 约 180 Hz；并非物理 60 Hz 屏幕验收，也不代表其他设备、Safari 或 Firefox。绘制回调耗时不等于完整 GPU 呈现耗时。统计排除三次截图前后各 0.25 秒，原始数据全部保留；实测不进行视频编码或逐帧读像素。</p>
+  <h2>修复后的实际交互录制</h2>
+  <video controls preload="metadata" src="verification/iteration-02/after-interaction.webm" aria-label="修复后实际按住约8秒再释放的录制"></video>
+  <p id="encoded-summary" class="muted"></p>
+  <p id="recording-diagnostic" class="muted"></p>
+
+  <h2>复现与验证边界</h2>
+  <p>启动 <code>npm run dev</code> 后，使用 <code>node scripts/measure-stability.mjs before</code> 重现旧版，<code>npm test</code> 运行回归并生成新数据，<code>npm run benchmark:stability</code> 做真实时间长按，<code>npm run report:stability</code> 更新图表。视频量测为 <code>npm run analyze:flicker -- --video source/diagnostics/PixPin_2026-10-30_22-46-44.mp4</code>。Python 分析需 OpenCV、NumPy、Pillow、Matplotlib；产品不依赖它们。</p>
+  <p>构建、完整测试结果与 Git 交付见 <a href="verification/iteration-02/verification.txt">本轮验收记录</a>。既有初版记录继续保留在 Git 历史，不把历史通过结果当成本轮验证。</p>
+  <footer>实现核对参考：<a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation">MDN 画布合成</a>、<a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/createConicGradient">MDN conic gradient</a>、<a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineCap">MDN 圆弧端点</a>、<a href="https://playwright.dev/docs/api/class-clock#clock-pause-at">Playwright 时钟暂停</a>。项目事实以源码和实际数据为准。</footer>
+</main>
+<script src="verification/iteration-02/report-data.js"></script>
+<script>
+const data=window.STABILITY_REPORT;
+if(!data)throw new Error('请先运行 npm run report:stability 生成本轮报告数据。');
+const input=data.input, summary=data.summary, $=id=>document.getElementById(id);
+const percent=value=>`${Math.abs(value).toFixed(2)}%`;
+$('headline').innerHTML=`确认根因：固定周期切换两套像素模型。相同浏览器量测中，3–8 秒最大单帧下降从 <strong>${percent(summary.controlledBefore[0].worstDropPercent)}</strong> 降至 <strong>${percent(summary.controlledAfter[0].worstDropPercent)}</strong>，新版三个长按窗口超过 5% 的骤降均为 0 次。`;
+$('input-info').textContent=`${input.width}×${input.height} · ${input.fps} FPS · ${input.frameCount} 帧 · ${input.duration.toFixed(3)} 秒；骤降中位间隔 ${input.medianDropInterval.toFixed(3)} 秒。帧号从 0 开始。`;
+$('video').src=`../${input.video}`;
+let current=0;
+function drawCurve(){const canvas=$('input-curve'),ratio=Math.min(devicePixelRatio||1,2),w=canvas.clientWidth,h=220;canvas.width=w*ratio;canvas.height=h*ratio;const c=canvas.getContext('2d');c.scale(ratio,ratio);c.strokeStyle='#283649';c.beginPath();c.moveTo(12,h-24);c.lineTo(w-12,h-24);c.stroke();const max=Math.max(...input.frames.map(f=>f.energy));c.strokeStyle='#86bbda';c.lineWidth=1.5;c.beginPath();input.frames.forEach((frame,i)=>{const x=12+i/(input.frameCount-1)*(w-24),y=h-24-frame.energy/max*(h-40);i?c.lineTo(x,y):c.moveTo(x,y)});c.stroke();const x=12+current/(input.frameCount-1)*(w-24);c.strokeStyle='#dfa88e';c.beginPath();c.moveTo(x,10);c.lineTo(x,h-24);c.stroke();c.fillStyle='#98a9bf';c.font='12px system-ui';c.fillText('动态亮度能量 / 256 帧',16,18)}
+function selectFrame(index,seek=true){current=Math.max(0,Math.min(input.frameCount-1,Math.round(index)));$('frame-input').value=current;$('frame-range').value=current;$('frame-label').textContent=`F${String(current).padStart(3,'0')} · ${(current/input.fps).toFixed(3)} s`;if(seek){$('video').pause();$('video').currentTime=(current+.5)/input.fps}$('frame-table').innerHTML=input.frames.slice(Math.max(0,current-2),Math.min(input.frameCount,current+3)).map(f=>`<tr data-frame="${f.frame}" class="${f.frame===current?'selected':''}"><td>F${String(f.frame).padStart(3,'0')}</td><td>${f.time.toFixed(3)} s</td><td>${Math.round(f.energy).toLocaleString()}</td><td class="${f.changePercent < -5?'negative':''}">${f.changePercent.toFixed(2)}%</td></tr>`).join('');drawCurve()}
+$('previous').onclick=()=>selectFrame(current-1);$('next').onclick=()=>selectFrame(current+1);$('frame-input').onchange=event=>selectFrame(Number(event.target.value));$('frame-range').oninput=event=>selectFrame(Number(event.target.value));$('frame-table').onclick=event=>{const row=event.target.closest('[data-frame]');if(row)selectFrame(Number(row.dataset.frame))};$('input-curve').onclick=event=>selectFrame((event.offsetX-12)/($('input-curve').clientWidth-24)*(input.frameCount-1));document.addEventListener('keydown',event=>{if(event.target.tagName==='INPUT')return;if(event.key==='ArrowLeft'||event.key==='ArrowRight'){event.preventDefault();selectFrame(current+(event.key==='ArrowLeft'?-1:1))}});window.addEventListener('resize',drawCurve);
+$('video').addEventListener('timeupdate',()=>{if(!$('video').paused)selectFrame(Math.floor($('video').currentTime*input.fps),false)});
+$('comparison').innerHTML=summary.controlledBefore.map((before,i)=>{const after=summary.controlledAfter[i];return `<tr><td>${before.from}–${before.to} s</td><td class="negative">${percent(before.worstDropPercent)}</td><td>${percent(after.worstDropPercent)}</td><td>${before.negativeJumpsOver5Percent} / ${after.negativeJumpsOver5Percent}</td></tr>`}).join('');
+$('contacts').innerHTML=Array.from({length:8},(_,i)=>`<figure><img loading="lazy" src="verification/iteration-02/input-contact-${String(i+1).padStart(2,'0')}.jpg" alt="全部帧总览 ${i+1}"><figcaption>F${i*32}–F${Math.min(255,(i+1)*32-1)}</figcaption></figure>`).join('');
+const worstResume=Math.max(...summary.resume.map(r=>Math.abs(r.changePercent))), checkpoints=data.after.checkpoints;
+$('release-summary').textContent=`六次快速续按首帧变化绝对值最大 ${worstResume.toFixed(2)}%。受控 46 秒测试每星最多 ${Math.max(...checkpoints.map(r=>r.maxHistoryCount))} 个有效样本（容量 384），有效圆弧最大 ${Math.max(...checkpoints.map(r=>r.maxArcRadians)).toFixed(3)} rad，小于一整圈。释放后动态画布 Alpha 归零，保留静态背景、标题和圆环。`;
+$('dpr-summary').textContent=`高 DPR 专项复核另发现 CSS 尺寸复制会重新采样冻结画面：设备 DPR=3、绘图 DPR=1.75 时，首个淡出帧相对形状差约 ${(summary.fractionalDprFreeze.before.relativeDifference*100).toFixed(2)}%。改为 backing-store 像素一比一复制后，该测试差异为 ${(summary.fractionalDprFreeze.after.relativeDifference*100).toFixed(2)}%。它是释放边界修复，与持续按压时的周期闪烁分别验证。`;
+$('encoded-summary').textContent=`另行录制实际交互并完整解码 ${summary.encodedVideo.frameCount} 个编码帧（${summary.encodedVideo.fps} FPS）。录制时间 3–8 秒窗口的最大相邻帧动态亮度下降 ${Math.abs(summary.encodedVideo.steady.worstDropPercent).toFixed(2)}%，超过 5% 的下降 ${summary.encodedVideo.steady.negativeJumpsOver5Percent} 次。视频编码、画面缩采样与原始 Canvas 量测分开记录。`;
+$('recording-diagnostic').textContent=`录制链路还单独核对了一次：默认 JPEG90/有损 VP9 录像最大下降 ${Math.abs(summary.recordingDiagnostic.compressedVideo.worstDropPercent).toFixed(2)}%，同次直接 Canvas 采样仅 ${Math.abs(summary.recordingDiagnostic.simultaneousRawWorstDropPercent).toFixed(2)}%。最终演示因此采用真实合成器 PNG 帧，保留时间戳并在结束后编码 VP9 无损 RGB，避免弱轨迹被有损量化干扰。独立性能记录不含这些录制与读回开销。`;
+const total=summary.live.windows.at(-1);
+$('performance-summary').textContent=`1440×900、DPR=1，实际持续按压约 46 秒；3–46 秒稳态观测约 ${total.observedFps.toFixed(1)} 次 RAF/s，回调耗时 P95 ${total.p95RenderMs.toFixed(2)} ms。8、20、46 秒三个检查点均绘制 ${summary.live.checkpoints[0].renderedTrails} 条轨迹，未触发质量降量；释放 1.15 秒后 state=${summary.live.released.state}、alpha=${summary.live.released.alpha}，页面错误 ${summary.live.errors.length} 个。`;
+$('performance').innerHTML=summary.live.windows.map(window=>`<tr><td>${window.from}–${window.to} s</td><td>${window.observedFps.toFixed(1)} /s</td><td>${window.p95RenderMs.toFixed(2)} ms</td><td>${window.p95FrameIntervalMs.toFixed(2)} ms</td></tr>`).join('');selectFrame(0,false);
+</script>
+</body></html>

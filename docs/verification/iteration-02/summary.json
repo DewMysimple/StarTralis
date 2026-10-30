@@ -1,0 +1,424 @@
+{
+  "baselineRevision": "1b1db046e087dca823cc4ef020f7d75a0f1c9131",
+  "recording": {
+    "video": "source/diagnostics/PixPin_2026-10-30_22-46-44.mp4",
+    "fps": 24.0,
+    "width": 2550,
+    "height": 1314,
+    "frameCount": 256,
+    "duration": 10.666666666666666,
+    "measurement": "850x438 area-resampled positive luma difference from frame 0; title, ring and recording cursor masked. All frames decoded. Frame index is zero based.",
+    "drops": [
+      {
+        "frame": 73,
+        "time": 3.041667,
+        "energy": 640434.0,
+        "changePercent": -20.38562,
+        "meanAbsoluteDifference": 0.829409,
+        "pixelsAbove8": 19396,
+        "pixelsAbove20": 12173,
+        "pixelsAbove40": 4048
+      },
+      {
+        "frame": 84,
+        "time": 3.5,
+        "energy": 825111.0,
+        "changePercent": -18.98795,
+        "meanAbsoluteDifference": 0.943021,
+        "pixelsAbove8": 25290,
+        "pixelsAbove20": 15875,
+        "pixelsAbove40": 5358
+      },
+      {
+        "frame": 95,
+        "time": 3.958333,
+        "energy": 991980.0,
+        "changePercent": -17.33714,
+        "meanAbsoluteDifference": 0.940721,
+        "pixelsAbove8": 30829,
+        "pixelsAbove20": 19011,
+        "pixelsAbove40": 6516
+      },
+      {
+        "frame": 105,
+        "time": 4.375,
+        "energy": 1141729.0,
+        "changePercent": -16.49676,
+        "meanAbsoluteDifference": 1.041607,
+        "pixelsAbove8": 35798,
+        "pixelsAbove20": 21997,
+        "pixelsAbove40": 7534
+      },
+      {
+        "frame": 116,
+        "time": 4.833333,
+        "energy": 1283414.0,
+        "changePercent": -14.16956,
+        "meanAbsoluteDifference": 1.098731,
+        "pixelsAbove8": 40692,
+        "pixelsAbove20": 24578,
+        "pixelsAbove40": 8440
+      },
+      {
+        "frame": 127,
+        "time": 5.291667,
+        "energy": 1392083.0,
+        "changePercent": -13.39207,
+        "meanAbsoluteDifference": 1.081091,
+        "pixelsAbove8": 44876,
+        "pixelsAbove20": 26445,
+        "pixelsAbove40": 8902
+      },
+      {
+        "frame": 138,
+        "time": 5.75,
+        "energy": 1474418.0,
+        "changePercent": -14.09528,
+        "meanAbsoluteDifference": 1.094446,
+        "pixelsAbove8": 48636,
+        "pixelsAbove20": 28071,
+        "pixelsAbove40": 8977
+      },
+      {
+        "frame": 149,
+        "time": 6.208333,
+        "energy": 1564697.0,
+        "changePercent": -13.58602,
+        "meanAbsoluteDifference": 1.134786,
+        "pixelsAbove8": 52232,
+        "pixelsAbove20": 29500,
+        "pixelsAbove40": 9259
+      },
+      {
+        "frame": 160,
+        "time": 6.666667,
+        "energy": 1657256.0,
+        "changePercent": -11.55542,
+        "meanAbsoluteDifference": 1.162663,
+        "pixelsAbove8": 55786,
+        "pixelsAbove20": 30802,
+        "pixelsAbove40": 9469
+      },
+      {
+        "frame": 170,
+        "time": 7.083333,
+        "energy": 1701672.0,
+        "changePercent": -13.34734,
+        "meanAbsoluteDifference": 1.192173,
+        "pixelsAbove8": 58266,
+        "pixelsAbove20": 31388,
+        "pixelsAbove40": 9381
+      },
+      {
+        "frame": 181,
+        "time": 7.541667,
+        "energy": 1764056.0,
+        "changePercent": -12.53011,
+        "meanAbsoluteDifference": 1.13391,
+        "pixelsAbove8": 60842,
+        "pixelsAbove20": 32251,
+        "pixelsAbove40": 9482
+      },
+      {
+        "frame": 192,
+        "time": 8.0,
+        "energy": 1806892.0,
+        "changePercent": -13.32496,
+        "meanAbsoluteDifference": 1.223723,
+        "pixelsAbove8": 62628,
+        "pixelsAbove20": 32705,
+        "pixelsAbove40": 9538
+      },
+      {
+        "frame": 203,
+        "time": 8.458333,
+        "energy": 1843721.0,
+        "changePercent": -13.84042,
+        "meanAbsoluteDifference": 1.24024,
+        "pixelsAbove8": 64080,
+        "pixelsAbove20": 32853,
+        "pixelsAbove40": 9621
+      },
+      {
+        "frame": 214,
+        "time": 8.916667,
+        "energy": 1896275.0,
+        "changePercent": -13.02516,
+        "meanAbsoluteDifference": 1.190549,
+        "pixelsAbove8": 65822,
+        "pixelsAbove20": 33498,
+        "pixelsAbove40": 9773
+      },
+      {
+        "frame": 224,
+        "time": 9.333333,
+        "energy": 1922835.0,
+        "changePercent": -12.68319,
+        "meanAbsoluteDifference": 1.344301,
+        "pixelsAbove8": 66939,
+        "pixelsAbove20": 33651,
+        "pixelsAbove40": 9920
+      }
+    ],
+    "medianDropInterval": 0.458333
+  },
+  "controlledBefore": [
+    {
+      "from": 3,
+      "to": 8,
+      "frames": 301,
+      "worstDropPercent": -16.913596652263774,
+      "negativeJumpsOver5Percent": 11,
+      "worstNear450msPercent": -16.913596652263774
+    },
+    {
+      "from": 12,
+      "to": 20,
+      "frames": 481,
+      "worstDropPercent": -15.989187716437636,
+      "negativeJumpsOver5Percent": 18,
+      "worstNear450msPercent": -15.989187716437636
+    },
+    {
+      "from": 36,
+      "to": 46,
+      "frames": 601,
+      "worstDropPercent": -15.771111773888668,
+      "negativeJumpsOver5Percent": 22,
+      "worstNear450msPercent": -15.771111773888668
+    }
+  ],
+  "controlledAfter": [
+    {
+      "from": 3,
+      "to": 8,
+      "frames": 301,
+      "worstDropPercent": -0.47137259860352554,
+      "negativeJumpsOver5Percent": 0,
+      "worstNear450msPercent": -0.47137259860352554
+    },
+    {
+      "from": 12,
+      "to": 20,
+      "frames": 481,
+      "worstDropPercent": -0.4962501903326255,
+      "negativeJumpsOver5Percent": 0,
+      "worstNear450msPercent": -0.29684354354085896
+    },
+    {
+      "from": 36,
+      "to": 46,
+      "frames": 601,
+      "worstDropPercent": -0.4557672962667736,
+      "negativeJumpsOver5Percent": 0,
+      "worstNear450msPercent": -0.3570032673865797
+    }
+  ],
+  "live": {
+    "measurement": "46 second real wall-clock hold, native RAF, unmodified animation clock; no video encoding or per-frame pixel readback. Windows headless Chromium is not a physical 60 Hz display. Exclude +/-0.25 seconds around 3 screenshots from steady-state summaries; retain all raw frames.",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "hardwareConcurrency": 28,
+    "devicePixelRatio": 1,
+    "canvasDpr": 1,
+    "checkpoints": [
+      {
+        "seconds": 8,
+        "elapsed": 8.09920000001788,
+        "renderedTrails": 360,
+        "state": "pressing"
+      },
+      {
+        "seconds": 20,
+        "elapsed": 20.099700000017883,
+        "renderedTrails": 360,
+        "state": "pressing"
+      },
+      {
+        "seconds": 46,
+        "elapsed": 46.089300000011924,
+        "renderedTrails": 360,
+        "state": "pressing"
+      }
+    ],
+    "windows": [
+      {
+        "from": 3,
+        "to": 8,
+        "frames": 870,
+        "observedFps": 179.37774478876722,
+        "meanRenderMs": 2.3550574710656855,
+        "p95RenderMs": 2.800000011920929,
+        "p95FrameIntervalMs": 5.600000000000364,
+        "maxFrameIntervalMs": 16.59999999999991
+      },
+      {
+        "from": 12,
+        "to": 20,
+        "frames": 1400,
+        "observedFps": 178.34394904458603,
+        "meanRenderMs": 3.276000000259706,
+        "p95RenderMs": 3.5999999940395355,
+        "p95FrameIntervalMs": 5.69999999999709,
+        "maxFrameIntervalMs": 11.199999999998909
+      },
+      {
+        "from": 36,
+        "to": 46,
+        "frames": 1753,
+        "observedFps": 178.16670223902597,
+        "meanRenderMs": 3.3692527097664215,
+        "p95RenderMs": 3.699999988079071,
+        "p95FrameIntervalMs": 5.69999999999709,
+        "maxFrameIntervalMs": 11.19999999999709
+      },
+      {
+        "from": 3,
+        "to": 46,
+        "frames": 7467,
+        "observedFps": 178.46771591438713,
+        "meanRenderMs": 3.188295165430323,
+        "p95RenderMs": 3.5999999940395355,
+        "p95FrameIntervalMs": 5.69999999999709,
+        "maxFrameIntervalMs": 22.30000000000109
+      }
+    ],
+    "released": {
+      "state": "idle",
+      "alpha": 0
+    },
+    "errors": []
+  },
+  "release": [
+    {
+      "elapsed": 0.25,
+      "fittedScale": 0.8659535933321973,
+      "expectedScale": 0.8569268977432243,
+      "normalizedShapeError": 0.010858190103982212
+    },
+    {
+      "elapsed": 0.6,
+      "fittedScale": 0.40341620073422135,
+      "expectedScale": 0.39358600583090386,
+      "normalizedShapeError": 0.010866921859640674
+    }
+  ],
+  "resume": [
+    {
+      "repetition": 0,
+      "before": 2213692,
+      "after": 2229947,
+      "changePercent": 0.7342936596419047
+    },
+    {
+      "repetition": 1,
+      "before": 2165109,
+      "after": 2122817,
+      "changePercent": -1.9533427647291712
+    },
+    {
+      "repetition": 2,
+      "before": 2050100,
+      "after": 2017309,
+      "changePercent": -1.5994829520511233
+    },
+    {
+      "repetition": 3,
+      "before": 1950274,
+      "after": 1909445,
+      "changePercent": -2.0935007081056334
+    },
+    {
+      "repetition": 4,
+      "before": 1874187,
+      "after": 1830245,
+      "changePercent": -2.344589947534581
+    },
+    {
+      "repetition": 5,
+      "before": 1789331,
+      "after": 1763035,
+      "changePercent": -1.4695995318920851
+    }
+  ],
+  "fractionalDprFreeze": {
+    "before": {
+      "width": 683,
+      "height": 1477,
+      "relativeDifference": 0.2538943609963469
+    },
+    "after": {
+      "width": 683,
+      "height": 1477,
+      "relativeDifference": 0
+    }
+  },
+  "encodedVideo": {
+    "source": "docs/verification/iteration-02/after-interaction.webm",
+    "fps": 25.0,
+    "frameCount": 235,
+    "measurement": "Every encoded frame decoded at 480x300; positive luma above first frame, title and ring masked. Recording time 3-8 seconds is inside this demo's known hold; release excluded. Separate from raw Canvas measurements.",
+    "steady": {
+      "from": 3,
+      "to": 8,
+      "worstDropPercent": -0.010268353589659718,
+      "negativeJumpsOver5Percent": 0
+    }
+  },
+  "recordingDiagnostic": {
+    "compressedVideo": {
+      "from": 3,
+      "to": 8,
+      "worstDropPercent": -5.975688967245063,
+      "negativeJumpsOver5Percent": 1
+    },
+    "simultaneousRawWorstDropPercent": -0.7260052818947482,
+    "simultaneousRawJumpsOver5Percent": 0
+  },
+  "browserTests": {
+    "startTime": "2026-10-30T16:12:19.733Z",
+    "duration": 83747.027,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "productionSmoke": {
+    "url": "http://127.0.0.1:5181/",
+    "results": [
+      {
+        "layout": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        },
+        "pressed": "pressing",
+        "released": {
+          "state": "idle",
+          "alpha": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "errors": []
+      },
+      {
+        "layout": {
+          "width": 390,
+          "height": 844,
+          "dpr": 3
+        },
+        "pressed": "pressing",
+        "released": {
+          "state": "idle",
+          "alpha": 0,
+          "width": 683,
+          "height": 1477
+        },
+        "errors": []
+      }
+    ]
+  }
+}

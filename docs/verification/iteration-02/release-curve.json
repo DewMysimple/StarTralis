@@ -1,0 +1,14 @@
+[
+  {
+    "elapsed": 0.25,
+    "fittedScale": 0.8659535933321973,
+    "expectedScale": 0.8569268977432243,
+    "normalizedShapeError": 0.010858190103982212
+  },
+  {
+    "elapsed": 0.6,
+    "fittedScale": 0.40341620073422135,
+    "expectedScale": 0.39358600583090386,
+    "normalizedShapeError": 0.010866921859640674
+  }
+]

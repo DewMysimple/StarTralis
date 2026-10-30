@@ -1,36 +1,36 @@
 {
   "short": {
-    "alpha": 249724,
-    "visible": 4360,
-    "checksum": 25839960,
+    "alpha": 120155,
+    "visible": 2512,
+    "checksum": 17313532,
     "width": 1440,
     "height": 900
   },
   "twoSeconds": {
-    "alpha": 3966747,
-    "visible": 64567,
-    "checksum": 289820851,
+    "alpha": 1981201,
+    "visible": 40479,
+    "checksum": 207192626,
     "width": 1440,
     "height": 900
   },
   "eightSeconds": {
-    "alpha": 11306986,
-    "visible": 231097,
-    "checksum": 1111827401,
+    "alpha": 5515752,
+    "visible": 129821,
+    "checksum": 822438509,
     "width": 1440,
     "height": 900
   },
   "fade250": {
-    "alpha": 4759751,
-    "visible": 126731,
-    "checksum": 1117641765,
+    "alpha": 4799904,
+    "visible": 117479,
+    "checksum": 831320465,
     "width": 1440,
     "height": 900
   },
   "fade600": {
-    "alpha": 433737,
-    "visible": 0,
-    "checksum": 1058774431,
+    "alpha": 976999,
+    "visible": 14582,
+    "checksum": 707276885,
     "width": 1440,
     "height": 900
   },

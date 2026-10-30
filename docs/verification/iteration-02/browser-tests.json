@@ -1,0 +1,678 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "E:\\Software Development\\ArtTest\\StarTralis\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "E:\\Software Development\\ArtTest\\StarTralis\\playwright.config.ts",
+    "rootDir": "E:/Software Development/ArtTest/StarTralis/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/Software Development/ArtTest/StarTralis/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "E:/Software Development/ArtTest/StarTralis/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\Software Development\\ArtTest\\StarTralis\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "E:\\Software Development\\ArtTest\\StarTralis\\tests",
+        "snapshotDir": "E:\\Software Development\\ArtTest\\StarTralis\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5180",
+          "headless": true,
+          "channel": "chromium",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/verification/iteration-02/browser-tests.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev",
+      "url": "http://127.0.0.1:5180",
+      "reuseExistingServer": true,
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "stability.spec.ts",
+      "file": "stability.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "every rendered frame remains stable through 8, 20 and 46 second holds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21096,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T16:12:20.008Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a1602a8ecbd2018ad3a6-5866c06d52d08b4196e1",
+          "file": "stability.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "release freezes the complete picture and follows one 1.05 second fade curve",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3539,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T16:12:41.237Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a1602a8ecbd2018ad3a6-725d877b4282392dbac6",
+          "file": "stability.spec.ts",
+          "line": 52,
+          "column": 1
+        },
+        {
+          "title": "resuming a fading exposure does not flash, restart or detach its old trails",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4219,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T16:12:44.781Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a1602a8ecbd2018ad3a6-01eebfd56bae6d4a3cc9",
+          "file": "stability.spec.ts",
+          "line": 95,
+          "column": 1
+        },
+        {
+          "title": "high DPR touch viewport remains continuous at 144 Hz",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4332,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T16:12:49.006Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a1602a8ecbd2018ad3a6-54a7931a39016c630ad4",
+          "file": "stability.spec.ts",
+          "line": 124,
+          "column": 1
+        },
+        {
+          "title": "the flicker report loads all 256 frames and steps across the measured dip",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 705,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T16:12:53.343Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a1602a8ecbd2018ad3a6-632f0b3da65be833557d",
+          "file": "stability.spec.ts",
+          "line": 142,
+          "column": 1
+        },
+        {
+          "title": "fractional drawing DPR preserves the frozen picture without resampling",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2963,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T16:12:54.054Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a1602a8ecbd2018ad3a6-a0618c25f00236ed7053",
+          "file": "stability.spec.ts",
+          "line": 167,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "starfield.spec.ts",
+      "file": "starfield.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "exposure builds progressively, then fades without altering the sky or composition",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4375,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T16:12:57.041Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "measured-exposure",
+                      "contentType": "application/json",
+                      "body": "ewogICJzaG9ydCI6IHsKICAgICJhbHBoYSI6IDEyMDE1NSwKICAgICJ2aXNpYmxlIjogMjUxMiwKICAgICJjaGVja3N1bSI6IDE3MzEzNTMyLAogICAgIndpZHRoIjogMTQ0MCwKICAgICJoZWlnaHQiOiA5MDAKICB9LAogICJ0d29TZWNvbmRzIjogewogICAgImFscGhhIjogMTk4MTIwMSwKICAgICJ2aXNpYmxlIjogNDA0NzksCiAgICAiY2hlY2tzdW0iOiAyMDcxOTI2MjYsCiAgICAid2lkdGgiOiAxNDQwLAogICAgImhlaWdodCI6IDkwMAogIH0sCiAgImVpZ2h0U2Vjb25kcyI6IHsKICAgICJhbHBoYSI6IDU1MTU3NTIsCiAgICAidmlzaWJsZSI6IDEyOTgyMSwKICAgICJjaGVja3N1bSI6IDgyMjQzODUwOSwKICAgICJ3aWR0aCI6IDE0NDAsCiAgICAiaGVpZ2h0IjogOTAwCiAgfSwKICAiZmFkZTI1MCI6IHsKICAgICJhbHBoYSI6IDQ3OTk5MDQsCiAgICAidmlzaWJsZSI6IDExNzQ3OSwKICAgICJjaGVja3N1bSI6IDgzMTMyMDQ2NSwKICAgICJ3aWR0aCI6IDE0NDAsCiAgICAiaGVpZ2h0IjogOTAwCiAgfSwKICAiZmFkZTYwMCI6IHsKICAgICJhbHBoYSI6IDk3Njk5OSwKICAgICJ2aXNpYmxlIjogMTQ1ODIsCiAgICAiY2hlY2tzdW0iOiA3MDcyNzY4ODUsCiAgICAid2lkdGgiOiAxNDQwLAogICAgImhlaWdodCI6IDkwMAogIH0sCiAgImJhY2tncm91bmRCZWZvcmUiOiB7CiAgICAiYWxwaGEiOiAxNDc4NCwKICAgICJ2aXNpYmxlIjogMzkxLAogICAgImNoZWNrc3VtIjogMjU1ODY3MSwKICAgICJ3aWR0aCI6IDE0NDAsCiAgICAiaGVpZ2h0IjogOTAwCiAgfSwKICAiYmFja2dyb3VuZEFmdGVyIjogewogICAgImFscGhhIjogMTQ3ODQsCiAgICAidmlzaWJsZSI6IDM5MSwKICAgICJjaGVja3N1bSI6IDI1NTc5NjcsCiAgICAid2lkdGgiOiAxNDQwLAogICAgImhlaWdodCI6IDkwMAogIH0sCiAgImVycm9ycyI6IFtdCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f953f5ef69df88c9b92b-557b485fce807087a455",
+          "file": "starfield.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "long exposure remains varied at 46 seconds and can resume while fading",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21942,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T16:13:01.420Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f953f5ef69df88c9b92b-d3e0915cc40c371981d1",
+          "file": "starfield.spec.ts",
+          "line": 80,
+          "column": 1
+        },
+        {
+          "title": "pointer capture, cancellation, keyboard chords, blur and visibility release correctly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1758,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T16:13:23.369Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f953f5ef69df88c9b92b-144db76978f7039788eb",
+          "file": "starfield.spec.ts",
+          "line": 101,
+          "column": 1
+        },
+        {
+          "title": "1920 x 1080: composition, resize and exposure",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4162,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T16:13:25.134Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f953f5ef69df88c9b92b-08492f20a3b03a0044ef",
+          "file": "starfield.spec.ts",
+          "line": 149,
+          "column": 3
+        },
+        {
+          "title": "390 x 844: composition, resize and exposure",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3566,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T16:13:29.301Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f953f5ef69df88c9b92b-33214b476b38c826b6ee",
+          "file": "starfield.spec.ts",
+          "line": 149,
+          "column": 3
+        },
+        {
+          "title": "768 x 1024: composition, resize and exposure",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3943,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T16:13:32.873Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f953f5ef69df88c9b92b-7b3209159c7faeed0427",
+          "file": "starfield.spec.ts",
+          "line": 149,
+          "column": 3
+        },
+        {
+          "title": "real touch pointer events and high DPR stay sharp and release",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1427,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T16:13:36.821Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f953f5ef69df88c9b92b-ea9721c0d76aca49fbb4",
+          "file": "starfield.spec.ts",
+          "line": 177,
+          "column": 1
+        },
+        {
+          "title": "reduced motion keeps explicit interaction and respects user preference",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 914,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T16:13:38.253Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f953f5ef69df88c9b92b-81ba4d05582e94032d85",
+          "file": "starfield.spec.ts",
+          "line": 197,
+          "column": 1
+        },
+        {
+          "title": "60, 120 and 144 Hz advance the same independent celestial orbits",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3656,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T16:13:39.172Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f953f5ef69df88c9b92b-dc9601de8f277681e790",
+          "file": "starfield.spec.ts",
+          "line": 211,
+          "column": 1
+        },
+        {
+          "title": "the reference report loads all frames, seeks the original video and steps once",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 441,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-30T16:13:42.835Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f953f5ef69df88c9b92b-a6abb625ed5836bfaa87",
+          "file": "starfield.spec.ts",
+          "line": 259,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-30T16:12:19.733Z",
+    "duration": 83747.027,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

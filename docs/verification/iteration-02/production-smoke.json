@@ -1,0 +1,35 @@
+{
+  "url": "http://127.0.0.1:5181/",
+  "results": [
+    {
+      "layout": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "pressed": "pressing",
+      "released": {
+        "state": "idle",
+        "alpha": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "errors": []
+    },
+    {
+      "layout": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3
+      },
+      "pressed": "pressing",
+      "released": {
+        "state": "idle",
+        "alpha": 0,
+        "width": 683,
+        "height": 1477
+      },
+      "errors": []
+    }
+  ]
+}

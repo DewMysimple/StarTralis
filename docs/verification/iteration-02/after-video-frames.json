@@ -1,0 +1,1424 @@
+{
+  "source": "docs/verification/iteration-02/after-interaction.webm",
+  "fps": 25.0,
+  "frameCount": 235,
+  "measurement": "Every encoded frame decoded at 480x300; positive luma above first frame, title and ring masked. Recording time 3-8 seconds is inside this demo's known hold; release excluded. Separate from raw Canvas measurements.",
+  "steady": {
+    "from": 3,
+    "to": 8,
+    "worstDropPercent": -0.010268353589659718,
+    "negativeJumpsOver5Percent": 0
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "time": 0.0,
+      "energy": 0.0,
+      "changePercent": 0
+    },
+    {
+      "frame": 1,
+      "time": 0.04,
+      "energy": 0.0,
+      "changePercent": 0
+    },
+    {
+      "frame": 2,
+      "time": 0.08,
+      "energy": 8.0,
+      "changePercent": 0
+    },
+    {
+      "frame": 3,
+      "time": 0.12,
+      "energy": 82.0,
+      "changePercent": 0
+    },
+    {
+      "frame": 4,
+      "time": 0.16,
+      "energy": 82.0,
+      "changePercent": 0
+    },
+    {
+      "frame": 5,
+      "time": 0.2,
+      "energy": 360.0,
+      "changePercent": 0
+    },
+    {
+      "frame": 6,
+      "time": 0.24,
+      "energy": 1014.0,
+      "changePercent": 181.66666666666669
+    },
+    {
+      "frame": 7,
+      "time": 0.28,
+      "energy": 2087.0,
+      "changePercent": 105.81854043392505
+    },
+    {
+      "frame": 8,
+      "time": 0.32,
+      "energy": 3537.0,
+      "changePercent": 69.47771921418304
+    },
+    {
+      "frame": 9,
+      "time": 0.36,
+      "energy": 3537.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 10,
+      "time": 0.4,
+      "energy": 5232.0,
+      "changePercent": 47.921967769296
+    },
+    {
+      "frame": 11,
+      "time": 0.44,
+      "energy": 7163.0,
+      "changePercent": 36.90749235474007
+    },
+    {
+      "frame": 12,
+      "time": 0.48,
+      "energy": 10111.0,
+      "changePercent": 41.15594024849922
+    },
+    {
+      "frame": 13,
+      "time": 0.52,
+      "energy": 12729.0,
+      "changePercent": 25.89259222628819
+    },
+    {
+      "frame": 14,
+      "time": 0.56,
+      "energy": 12729.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 15,
+      "time": 0.6,
+      "energy": 16009.0,
+      "changePercent": 25.767931495011396
+    },
+    {
+      "frame": 16,
+      "time": 0.64,
+      "energy": 19181.0,
+      "changePercent": 19.813854706727476
+    },
+    {
+      "frame": 17,
+      "time": 0.68,
+      "energy": 22776.0,
+      "changePercent": 18.742505604504455
+    },
+    {
+      "frame": 18,
+      "time": 0.72,
+      "energy": 26800.0,
+      "changePercent": 17.667720407446442
+    },
+    {
+      "frame": 19,
+      "time": 0.76,
+      "energy": 26800.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 20,
+      "time": 0.8,
+      "energy": 30821.0,
+      "changePercent": 15.003731343283588
+    },
+    {
+      "frame": 21,
+      "time": 0.84,
+      "energy": 34422.0,
+      "changePercent": 11.683592355861272
+    },
+    {
+      "frame": 22,
+      "time": 0.88,
+      "energy": 38777.0,
+      "changePercent": 12.65179245831154
+    },
+    {
+      "frame": 23,
+      "time": 0.92,
+      "energy": 43617.0,
+      "changePercent": 12.48162570595972
+    },
+    {
+      "frame": 24,
+      "time": 0.96,
+      "energy": 43617.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 25,
+      "time": 1.0,
+      "energy": 48363.0,
+      "changePercent": 10.881078478574867
+    },
+    {
+      "frame": 26,
+      "time": 1.04,
+      "energy": 52193.0,
+      "changePercent": 7.919277133345748
+    },
+    {
+      "frame": 27,
+      "time": 1.08,
+      "energy": 56525.0,
+      "changePercent": 8.299963596650883
+    },
+    {
+      "frame": 28,
+      "time": 1.12,
+      "energy": 60870.0,
+      "changePercent": 7.686864219371969
+    },
+    {
+      "frame": 29,
+      "time": 1.16,
+      "energy": 65568.0,
+      "changePercent": 7.7180877279448
+    },
+    {
+      "frame": 30,
+      "time": 1.2,
+      "energy": 70705.0,
+      "changePercent": 7.834614446071253
+    },
+    {
+      "frame": 31,
+      "time": 1.24,
+      "energy": 70705.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 32,
+      "time": 1.28,
+      "energy": 75441.0,
+      "changePercent": 6.6982533059896765
+    },
+    {
+      "frame": 33,
+      "time": 1.32,
+      "energy": 80039.0,
+      "changePercent": 6.0948290717249165
+    },
+    {
+      "frame": 34,
+      "time": 1.36,
+      "energy": 85133.0,
+      "changePercent": 6.36439735628882
+    },
+    {
+      "frame": 35,
+      "time": 1.4,
+      "energy": 90557.0,
+      "changePercent": 6.371207404884127
+    },
+    {
+      "frame": 36,
+      "time": 1.44,
+      "energy": 95561.0,
+      "changePercent": 5.525801428934263
+    },
+    {
+      "frame": 37,
+      "time": 1.48,
+      "energy": 95561.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 38,
+      "time": 1.52,
+      "energy": 100090.0,
+      "changePercent": 4.739381128284559
+    },
+    {
+      "frame": 39,
+      "time": 1.56,
+      "energy": 105248.0,
+      "changePercent": 5.153361974223203
+    },
+    {
+      "frame": 40,
+      "time": 1.6,
+      "energy": 110962.0,
+      "changePercent": 5.429081787777434
+    },
+    {
+      "frame": 41,
+      "time": 1.64,
+      "energy": 116625.0,
+      "changePercent": 5.103548962707949
+    },
+    {
+      "frame": 42,
+      "time": 1.68,
+      "energy": 116625.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 43,
+      "time": 1.72,
+      "energy": 121549.0,
+      "changePercent": 4.222079314040728
+    },
+    {
+      "frame": 44,
+      "time": 1.76,
+      "energy": 125753.0,
+      "changePercent": 3.4586874429242576
+    },
+    {
+      "frame": 45,
+      "time": 1.8,
+      "energy": 130369.0,
+      "changePercent": 3.670687776832371
+    },
+    {
+      "frame": 46,
+      "time": 1.84,
+      "energy": 136632.0,
+      "changePercent": 4.804056178999616
+    },
+    {
+      "frame": 47,
+      "time": 1.88,
+      "energy": 142100.0,
+      "changePercent": 4.001990748872886
+    },
+    {
+      "frame": 48,
+      "time": 1.92,
+      "energy": 146976.0,
+      "changePercent": 3.4313863476425066
+    },
+    {
+      "frame": 49,
+      "time": 1.96,
+      "energy": 151736.0,
+      "changePercent": 3.238623993032874
+    },
+    {
+      "frame": 50,
+      "time": 2.0,
+      "energy": 151736.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 51,
+      "time": 2.04,
+      "energy": 156351.0,
+      "changePercent": 3.041466758053457
+    },
+    {
+      "frame": 52,
+      "time": 2.08,
+      "energy": 161833.0,
+      "changePercent": 3.506213583539597
+    },
+    {
+      "frame": 53,
+      "time": 2.12,
+      "energy": 167859.0,
+      "changePercent": 3.723591603690224
+    },
+    {
+      "frame": 54,
+      "time": 2.16,
+      "energy": 172462.0,
+      "changePercent": 2.7421824269178385
+    },
+    {
+      "frame": 55,
+      "time": 2.2,
+      "energy": 176948.0,
+      "changePercent": 2.6011527177001392
+    },
+    {
+      "frame": 56,
+      "time": 2.24,
+      "energy": 182740.0,
+      "changePercent": 3.2732780251825355
+    },
+    {
+      "frame": 57,
+      "time": 2.28,
+      "energy": 182740.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 58,
+      "time": 2.32,
+      "energy": 189065.0,
+      "changePercent": 3.461201707343764
+    },
+    {
+      "frame": 59,
+      "time": 2.36,
+      "energy": 195087.0,
+      "changePercent": 3.1851479649855907
+    },
+    {
+      "frame": 60,
+      "time": 2.4,
+      "energy": 199654.0,
+      "changePercent": 2.341006832848924
+    },
+    {
+      "frame": 61,
+      "time": 2.44,
+      "energy": 204355.0,
+      "changePercent": 2.3545734120027584
+    },
+    {
+      "frame": 62,
+      "time": 2.48,
+      "energy": 210290.0,
+      "changePercent": 2.9042597440728235
+    },
+    {
+      "frame": 63,
+      "time": 2.52,
+      "energy": 210290.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 64,
+      "time": 2.56,
+      "energy": 216521.0,
+      "changePercent": 2.9630510247753206
+    },
+    {
+      "frame": 65,
+      "time": 2.6,
+      "energy": 221219.0,
+      "changePercent": 2.1697664429778163
+    },
+    {
+      "frame": 66,
+      "time": 2.64,
+      "energy": 225573.0,
+      "changePercent": 1.968185372865805
+    },
+    {
+      "frame": 67,
+      "time": 2.68,
+      "energy": 230815.0,
+      "changePercent": 2.323859681788165
+    },
+    {
+      "frame": 68,
+      "time": 2.72,
+      "energy": 236728.0,
+      "changePercent": 2.5617919112709275
+    },
+    {
+      "frame": 69,
+      "time": 2.76,
+      "energy": 242015.0,
+      "changePercent": 2.2333648744550683
+    },
+    {
+      "frame": 70,
+      "time": 2.8,
+      "energy": 242015.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 71,
+      "time": 2.84,
+      "energy": 246943.0,
+      "changePercent": 2.0362374233002134
+    },
+    {
+      "frame": 72,
+      "time": 2.88,
+      "energy": 252098.0,
+      "changePercent": 2.0875262712447773
+    },
+    {
+      "frame": 73,
+      "time": 2.92,
+      "energy": 256971.0,
+      "changePercent": 1.9329784448904874
+    },
+    {
+      "frame": 74,
+      "time": 2.96,
+      "energy": 262383.0,
+      "changePercent": 2.106074226274557
+    },
+    {
+      "frame": 75,
+      "time": 3.0,
+      "energy": 267610.0,
+      "changePercent": 1.992126014261597
+    },
+    {
+      "frame": 76,
+      "time": 3.04,
+      "energy": 267610.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 77,
+      "time": 3.08,
+      "energy": 271965.0,
+      "changePercent": 1.627368185045408
+    },
+    {
+      "frame": 78,
+      "time": 3.12,
+      "energy": 276730.0,
+      "changePercent": 1.752063684665317
+    },
+    {
+      "frame": 79,
+      "time": 3.16,
+      "energy": 281875.0,
+      "changePercent": 1.8592129512521316
+    },
+    {
+      "frame": 80,
+      "time": 3.2,
+      "energy": 286757.0,
+      "changePercent": 1.7319733924612057
+    },
+    {
+      "frame": 81,
+      "time": 3.24,
+      "energy": 291577.0,
+      "changePercent": 1.6808656806982958
+    },
+    {
+      "frame": 82,
+      "time": 3.28,
+      "energy": 296013.0,
+      "changePercent": 1.5213820020097524
+    },
+    {
+      "frame": 83,
+      "time": 3.32,
+      "energy": 296013.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 84,
+      "time": 3.36,
+      "energy": 300975.0,
+      "changePercent": 1.6762777310455945
+    },
+    {
+      "frame": 85,
+      "time": 3.4,
+      "energy": 306190.0,
+      "changePercent": 1.7327020516654246
+    },
+    {
+      "frame": 86,
+      "time": 3.44,
+      "energy": 310815.0,
+      "changePercent": 1.51050001632973
+    },
+    {
+      "frame": 87,
+      "time": 3.48,
+      "energy": 314625.0,
+      "changePercent": 1.2258095651754175
+    },
+    {
+      "frame": 88,
+      "time": 3.52,
+      "energy": 318729.0,
+      "changePercent": 1.304410011918944
+    },
+    {
+      "frame": 89,
+      "time": 3.56,
+      "energy": 318729.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 90,
+      "time": 3.6,
+      "energy": 323264.0,
+      "changePercent": 1.4228388380097101
+    },
+    {
+      "frame": 91,
+      "time": 3.64,
+      "energy": 327348.0,
+      "changePercent": 1.2633636903583545
+    },
+    {
+      "frame": 92,
+      "time": 3.68,
+      "energy": 331164.0,
+      "changePercent": 1.1657318816672202
+    },
+    {
+      "frame": 93,
+      "time": 3.72,
+      "energy": 335054.0,
+      "changePercent": 1.1746445869720068
+    },
+    {
+      "frame": 94,
+      "time": 3.76,
+      "energy": 339212.0,
+      "changePercent": 1.2409939890286381
+    },
+    {
+      "frame": 95,
+      "time": 3.8,
+      "energy": 339212.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 96,
+      "time": 3.84,
+      "energy": 342821.0,
+      "changePercent": 1.063936417343725
+    },
+    {
+      "frame": 97,
+      "time": 3.88,
+      "energy": 346115.0,
+      "changePercent": 0.9608512897401278
+    },
+    {
+      "frame": 98,
+      "time": 3.92,
+      "energy": 349910.0,
+      "changePercent": 1.096456380104871
+    },
+    {
+      "frame": 99,
+      "time": 3.96,
+      "energy": 352930.0,
+      "changePercent": 0.8630790774770691
+    },
+    {
+      "frame": 100,
+      "time": 4.0,
+      "energy": 355662.0,
+      "changePercent": 0.7740911795540262
+    },
+    {
+      "frame": 101,
+      "time": 4.04,
+      "energy": 358526.0,
+      "changePercent": 0.8052589256091425
+    },
+    {
+      "frame": 102,
+      "time": 4.08,
+      "energy": 358526.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 103,
+      "time": 4.12,
+      "energy": 361809.0,
+      "changePercent": 0.9156937014330957
+    },
+    {
+      "frame": 104,
+      "time": 4.16,
+      "energy": 365037.0,
+      "changePercent": 0.8921834448562649
+    },
+    {
+      "frame": 105,
+      "time": 4.2,
+      "energy": 367466.0,
+      "changePercent": 0.6654119993315666
+    },
+    {
+      "frame": 106,
+      "time": 4.24,
+      "energy": 369774.0,
+      "changePercent": 0.6280853194581271
+    },
+    {
+      "frame": 107,
+      "time": 4.28,
+      "energy": 372478.0,
+      "changePercent": 0.731257470779445
+    },
+    {
+      "frame": 108,
+      "time": 4.32,
+      "energy": 372478.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 109,
+      "time": 4.36,
+      "energy": 375990.0,
+      "changePercent": 0.9428744784926835
+    },
+    {
+      "frame": 110,
+      "time": 4.4,
+      "energy": 378644.0,
+      "changePercent": 0.7058698369637462
+    },
+    {
+      "frame": 111,
+      "time": 4.44,
+      "energy": 380908.0,
+      "changePercent": 0.5979231151160391
+    },
+    {
+      "frame": 112,
+      "time": 4.48,
+      "energy": 383006.0,
+      "changePercent": 0.5507891669379372
+    },
+    {
+      "frame": 113,
+      "time": 4.52,
+      "energy": 385713.0,
+      "changePercent": 0.7067774395179249
+    },
+    {
+      "frame": 114,
+      "time": 4.56,
+      "energy": 388723.0,
+      "changePercent": 0.7803729716136187
+    },
+    {
+      "frame": 115,
+      "time": 4.6,
+      "energy": 388723.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 116,
+      "time": 4.64,
+      "energy": 391004.0,
+      "changePercent": 0.5867931663420922
+    },
+    {
+      "frame": 117,
+      "time": 4.68,
+      "energy": 392993.0,
+      "changePercent": 0.5086904481795607
+    },
+    {
+      "frame": 118,
+      "time": 4.72,
+      "energy": 395414.0,
+      "changePercent": 0.6160415071006398
+    },
+    {
+      "frame": 119,
+      "time": 4.76,
+      "energy": 397986.0,
+      "changePercent": 0.6504574951822661
+    },
+    {
+      "frame": 120,
+      "time": 4.8,
+      "energy": 400323.0,
+      "changePercent": 0.5872065851562525
+    },
+    {
+      "frame": 121,
+      "time": 4.84,
+      "energy": 400323.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 122,
+      "time": 4.88,
+      "energy": 402404.0,
+      "changePercent": 0.5198302370835517
+    },
+    {
+      "frame": 123,
+      "time": 4.92,
+      "energy": 404147.0,
+      "changePercent": 0.43314678780528304
+    },
+    {
+      "frame": 124,
+      "time": 4.96,
+      "energy": 406052.0,
+      "changePercent": 0.471363142618908
+    },
+    {
+      "frame": 125,
+      "time": 5.0,
+      "energy": 408020.0,
+      "changePercent": 0.4846669884645216
+    },
+    {
+      "frame": 126,
+      "time": 5.04,
+      "energy": 409867.0,
+      "changePercent": 0.45267388853487134
+    },
+    {
+      "frame": 127,
+      "time": 5.08,
+      "energy": 411411.0,
+      "changePercent": 0.37670756611289935
+    },
+    {
+      "frame": 128,
+      "time": 5.12,
+      "energy": 411411.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 129,
+      "time": 5.16,
+      "energy": 413148.0,
+      "changePercent": 0.4222055316945861
+    },
+    {
+      "frame": 130,
+      "time": 5.2,
+      "energy": 414782.0,
+      "changePercent": 0.39549991770504445
+    },
+    {
+      "frame": 131,
+      "time": 5.24,
+      "energy": 416719.0,
+      "changePercent": 0.4669922995694131
+    },
+    {
+      "frame": 132,
+      "time": 5.28,
+      "energy": 418351.0,
+      "changePercent": 0.39163081117010723
+    },
+    {
+      "frame": 133,
+      "time": 5.32,
+      "energy": 419383.0,
+      "changePercent": 0.246682809411225
+    },
+    {
+      "frame": 134,
+      "time": 5.36,
+      "energy": 419383.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 135,
+      "time": 5.4,
+      "energy": 420595.0,
+      "changePercent": 0.2889959774239781
+    },
+    {
+      "frame": 136,
+      "time": 5.44,
+      "energy": 422067.0,
+      "changePercent": 0.34998038493088135
+    },
+    {
+      "frame": 137,
+      "time": 5.48,
+      "energy": 423577.0,
+      "changePercent": 0.35776310396216093
+    },
+    {
+      "frame": 138,
+      "time": 5.52,
+      "energy": 424815.0,
+      "changePercent": 0.2922727154685001
+    },
+    {
+      "frame": 139,
+      "time": 5.56,
+      "energy": 424815.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 140,
+      "time": 5.6,
+      "energy": 425847.0,
+      "changePercent": 0.2429292750962153
+    },
+    {
+      "frame": 141,
+      "time": 5.64,
+      "energy": 427132.0,
+      "changePercent": 0.30175156805143377
+    },
+    {
+      "frame": 142,
+      "time": 5.68,
+      "energy": 428492.0,
+      "changePercent": 0.3184027420094937
+    },
+    {
+      "frame": 143,
+      "time": 5.72,
+      "energy": 429665.0,
+      "changePercent": 0.2737507351362467
+    },
+    {
+      "frame": 144,
+      "time": 5.76,
+      "energy": 429665.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 145,
+      "time": 5.8,
+      "energy": 430471.0,
+      "changePercent": 0.1875880046082523
+    },
+    {
+      "frame": 146,
+      "time": 5.84,
+      "energy": 431648.0,
+      "changePercent": 0.2734214383779632
+    },
+    {
+      "frame": 147,
+      "time": 5.88,
+      "energy": 432874.0,
+      "changePercent": 0.2840277262954993
+    },
+    {
+      "frame": 148,
+      "time": 5.92,
+      "energy": 434064.0,
+      "changePercent": 0.2749067858083487
+    },
+    {
+      "frame": 149,
+      "time": 5.96,
+      "energy": 434064.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 150,
+      "time": 6.0,
+      "energy": 434929.0,
+      "changePercent": 0.19927936894099663
+    },
+    {
+      "frame": 151,
+      "time": 6.04,
+      "energy": 435599.0,
+      "changePercent": 0.15404813199395573
+    },
+    {
+      "frame": 152,
+      "time": 6.08,
+      "energy": 436408.0,
+      "changePercent": 0.18572127116911474
+    },
+    {
+      "frame": 153,
+      "time": 6.12,
+      "energy": 437642.0,
+      "changePercent": 0.2827629191032299
+    },
+    {
+      "frame": 154,
+      "time": 6.16,
+      "energy": 437642.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 155,
+      "time": 6.2,
+      "energy": 438434.0,
+      "changePercent": 0.18096983379110032
+    },
+    {
+      "frame": 156,
+      "time": 6.24,
+      "energy": 439324.0,
+      "changePercent": 0.2029952056638029
+    },
+    {
+      "frame": 157,
+      "time": 6.28,
+      "energy": 440377.0,
+      "changePercent": 0.23968642732925538
+    },
+    {
+      "frame": 158,
+      "time": 6.32,
+      "energy": 441409.0,
+      "changePercent": 0.23434466377671992
+    },
+    {
+      "frame": 159,
+      "time": 6.36,
+      "energy": 441409.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 160,
+      "time": 6.4,
+      "energy": 442692.0,
+      "changePercent": 0.2906601360642913
+    },
+    {
+      "frame": 161,
+      "time": 6.44,
+      "energy": 443369.0,
+      "changePercent": 0.1529279950846174
+    },
+    {
+      "frame": 162,
+      "time": 6.48,
+      "energy": 444132.0,
+      "changePercent": 0.17209141820921925
+    },
+    {
+      "frame": 163,
+      "time": 6.52,
+      "energy": 445155.0,
+      "changePercent": 0.23033692685958673
+    },
+    {
+      "frame": 164,
+      "time": 6.56,
+      "energy": 445155.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 165,
+      "time": 6.6,
+      "energy": 446034.0,
+      "changePercent": 0.19745931192505228
+    },
+    {
+      "frame": 166,
+      "time": 6.64,
+      "energy": 446757.0,
+      "changePercent": 0.16209526628014892
+    },
+    {
+      "frame": 167,
+      "time": 6.68,
+      "energy": 446885.0,
+      "changePercent": 0.02865092208963471
+    },
+    {
+      "frame": 168,
+      "time": 6.72,
+      "energy": 447453.0,
+      "changePercent": 0.1271020508631926
+    },
+    {
+      "frame": 169,
+      "time": 6.76,
+      "energy": 447453.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 170,
+      "time": 6.8,
+      "energy": 447830.0,
+      "changePercent": 0.08425465914856378
+    },
+    {
+      "frame": 171,
+      "time": 6.84,
+      "energy": 448966.0,
+      "changePercent": 0.25366768639885073
+    },
+    {
+      "frame": 172,
+      "time": 6.88,
+      "energy": 449592.0,
+      "changePercent": 0.13943149369886054
+    },
+    {
+      "frame": 173,
+      "time": 6.92,
+      "energy": 450126.0,
+      "changePercent": 0.11877435541558512
+    },
+    {
+      "frame": 174,
+      "time": 6.96,
+      "energy": 450126.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 175,
+      "time": 7.0,
+      "energy": 450840.0,
+      "changePercent": 0.15862225243599148
+    },
+    {
+      "frame": 176,
+      "time": 7.04,
+      "energy": 451443.0,
+      "changePercent": 0.1337503327122791
+    },
+    {
+      "frame": 177,
+      "time": 7.08,
+      "energy": 452065.0,
+      "changePercent": 0.13778040638574574
+    },
+    {
+      "frame": 178,
+      "time": 7.12,
+      "energy": 452158.0,
+      "changePercent": 0.02057226283831426
+    },
+    {
+      "frame": 179,
+      "time": 7.16,
+      "energy": 452607.0,
+      "changePercent": 0.09930157157453934
+    },
+    {
+      "frame": 180,
+      "time": 7.2,
+      "energy": 452607.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 181,
+      "time": 7.24,
+      "energy": 453007.0,
+      "changePercent": 0.088376892094022
+    },
+    {
+      "frame": 182,
+      "time": 7.28,
+      "energy": 453450.0,
+      "changePercent": 0.0977909833622892
+    },
+    {
+      "frame": 183,
+      "time": 7.32,
+      "energy": 453646.0,
+      "changePercent": 0.04322417025031111
+    },
+    {
+      "frame": 184,
+      "time": 7.36,
+      "energy": 454159.0,
+      "changePercent": 0.11308377016439053
+    },
+    {
+      "frame": 185,
+      "time": 7.4,
+      "energy": 454159.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 186,
+      "time": 7.44,
+      "energy": 454481.0,
+      "changePercent": 0.07090027941756283
+    },
+    {
+      "frame": 187,
+      "time": 7.48,
+      "energy": 454971.0,
+      "changePercent": 0.10781528820786868
+    },
+    {
+      "frame": 188,
+      "time": 7.52,
+      "energy": 455379.0,
+      "changePercent": 0.08967604528640205
+    },
+    {
+      "frame": 189,
+      "time": 7.56,
+      "energy": 455732.0,
+      "changePercent": 0.07751784777074722
+    },
+    {
+      "frame": 190,
+      "time": 7.6,
+      "energy": 455763.0,
+      "changePercent": 0.006802243423775778
+    },
+    {
+      "frame": 191,
+      "time": 7.64,
+      "energy": 456049.0,
+      "changePercent": 0.06275191272657743
+    },
+    {
+      "frame": 192,
+      "time": 7.68,
+      "energy": 456432.0,
+      "changePercent": 0.08398220366672149
+    },
+    {
+      "frame": 193,
+      "time": 7.72,
+      "energy": 456633.0,
+      "changePercent": 0.04403722788937081
+    },
+    {
+      "frame": 194,
+      "time": 7.76,
+      "energy": 456744.0,
+      "changePercent": 0.024308361419356217
+    },
+    {
+      "frame": 195,
+      "time": 7.8,
+      "energy": 456744.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 196,
+      "time": 7.84,
+      "energy": 456976.0,
+      "changePercent": 0.050794318042490794
+    },
+    {
+      "frame": 197,
+      "time": 7.88,
+      "energy": 457169.0,
+      "changePercent": 0.0422341654704006
+    },
+    {
+      "frame": 198,
+      "time": 7.92,
+      "energy": 457613.0,
+      "changePercent": 0.09711944598167488
+    },
+    {
+      "frame": 199,
+      "time": 7.96,
+      "energy": 457717.0,
+      "changePercent": 0.022726627084468376
+    },
+    {
+      "frame": 200,
+      "time": 8.0,
+      "energy": 457670.0,
+      "changePercent": -0.010268353589659718
+    },
+    {
+      "frame": 201,
+      "time": 8.04,
+      "energy": 457810.0,
+      "changePercent": 0.030589726221941227
+    },
+    {
+      "frame": 202,
+      "time": 8.08,
+      "energy": 457810.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 203,
+      "time": 8.12,
+      "energy": 457810.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 204,
+      "time": 8.16,
+      "energy": 458787.0,
+      "changePercent": 0.21340730870884617
+    },
+    {
+      "frame": 205,
+      "time": 8.2,
+      "energy": 458787.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 206,
+      "time": 8.24,
+      "energy": 458588.0,
+      "changePercent": -0.043375248208865624
+    },
+    {
+      "frame": 207,
+      "time": 8.28,
+      "energy": 451635.0,
+      "changePercent": -1.5161757394436814
+    },
+    {
+      "frame": 208,
+      "time": 8.32,
+      "energy": 438634.0,
+      "changePercent": -2.8786520088124212
+    },
+    {
+      "frame": 209,
+      "time": 8.36,
+      "energy": 438634.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 210,
+      "time": 8.4,
+      "energy": 421660.0,
+      "changePercent": -3.869741059744569
+    },
+    {
+      "frame": 211,
+      "time": 8.44,
+      "energy": 400153.0,
+      "changePercent": -5.100554949485369
+    },
+    {
+      "frame": 212,
+      "time": 8.48,
+      "energy": 377241.0,
+      "changePercent": -5.725809877721777
+    },
+    {
+      "frame": 213,
+      "time": 8.52,
+      "energy": 350457.0,
+      "changePercent": -7.099970575838787
+    },
+    {
+      "frame": 214,
+      "time": 8.56,
+      "energy": 350457.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 215,
+      "time": 8.6,
+      "energy": 323954.0,
+      "changePercent": -7.562411365731037
+    },
+    {
+      "frame": 216,
+      "time": 8.64,
+      "energy": 298046.0,
+      "changePercent": -7.9974317341350964
+    },
+    {
+      "frame": 217,
+      "time": 8.68,
+      "energy": 270212.0,
+      "changePercent": -9.338826892493103
+    },
+    {
+      "frame": 218,
+      "time": 8.72,
+      "energy": 240868.0,
+      "changePercent": -10.859621334359693
+    },
+    {
+      "frame": 219,
+      "time": 8.76,
+      "energy": 212680.0,
+      "changePercent": -11.702675324243984
+    },
+    {
+      "frame": 220,
+      "time": 8.8,
+      "energy": 184224.0,
+      "changePercent": -13.379725409065257
+    },
+    {
+      "frame": 221,
+      "time": 8.84,
+      "energy": 157556.0,
+      "changePercent": -14.47585548028487
+    },
+    {
+      "frame": 222,
+      "time": 8.88,
+      "energy": 128605.0,
+      "changePercent": -18.375053949072072
+    },
+    {
+      "frame": 223,
+      "time": 8.92,
+      "energy": 128605.0,
+      "changePercent": 0.0
+    },
+    {
+      "frame": 224,
+      "time": 8.96,
+      "energy": 100584.0,
+      "changePercent": -21.7884219120563
+    },
+    {
+      "frame": 225,
+      "time": 9.0,
+      "energy": 79060.0,
+      "changePercent": -21.399029666746205
+    },
+    {
+      "frame": 226,
+      "time": 9.04,
+      "energy": 57437.0,
+      "changePercent": -27.350113837591707
+    },
+    {
+      "frame": 227,
+      "time": 9.08,
+      "energy": 35704.0,
+      "changePercent": -37.837979003081635
+    },
+    {
+      "frame": 228,
+      "time": 9.12,
+      "energy": 18459.0,
+      "changePercent": -48.299910374187775
+    },
+    {
+      "frame": 229,
+      "time": 9.16,
+      "energy": 5230.0,
+      "changePercent": -71.6669375372447
+    },
+    {
+      "frame": 230,
+      "time": 9.2,
+      "energy": 83.0,
+      "changePercent": -98.4130019120459
+    },
+    {
+      "frame": 231,
+      "time": 9.24,
+      "energy": 83.0,
+      "changePercent": 0
+    },
+    {
+      "frame": 232,
+      "time": 9.28,
+      "energy": 83.0,
+      "changePercent": 0
+    },
+    {
+      "frame": 233,
+      "time": 9.32,
+      "energy": 83.0,
+      "changePercent": 0
+    },
+    {
+      "frame": 234,
+      "time": 9.36,
+      "energy": 83.0,
+      "changePercent": 0
+    }
+  ]
+}
